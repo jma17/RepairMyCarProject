@@ -1,0 +1,555 @@
+<?xml version="1.0"?>
+<Skein rootNode="node-0xc6e83e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Zoom</generator>
+  <activeNode nodeId="node-0xc6e83e0" />
+  <item nodeId="node-0xc6e83e0">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+RepairMyCar
+An Interactive Fiction by Jaryd Ma
+Release 1 / Serial number 141014 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+
+Cigarette Vending Machine
+You can see cigarette machine here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="52">NO</temporary>
+    <children>
+      <child nodeId="node-0x15f3f0" />
+      <child nodeId="node-0xc7b8dd0" />
+      <child nodeId="node-0xb3e2c70" />
+      <child nodeId="node-0xb3bbfd0" />
+      <child nodeId="node-0xb3cf670" />
+      <child nodeId="node-0xb32d210" />
+      <child nodeId="node-0x7b8a090" />
+      <child nodeId="node-0xb31e350" />
+      <child nodeId="node-0xc762800" />
+      <child nodeId="node-0x15eb80" />
+      <child nodeId="node-0x1d3910" />
+      <child nodeId="node-0x14e380" />
+      <child nodeId="node-0xb32d9c0" />
+      <child nodeId="node-0xb3c01f0" />
+      <child nodeId="node-0xb31e610" />
+      <child nodeId="node-0xb328270" />
+      <child nodeId="node-0x7bd0ee0" />
+      <child nodeId="node-0xcaad350" />
+    </children>
+  </item>
+  <item nodeId="node-0xcaad350">
+    <command xml:space="preserve">give coin to Instead of buying the engine: </command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="30">YES</temporary>
+    <children>
+      <child nodeId="node-0x7f0e870" />
+    </children>
+  </item>
+  <item nodeId="node-0x7f0e870">
+    <command xml:space="preserve">    if the player has the coin, try giving the coin to the cigarette machine; </command>
+    <result xml:space="preserve">You seem to want to talk to someone, but I can&apos;t see whom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="30">YES</temporary>
+    <children>
+      <child nodeId="node-0x160050" />
+    </children>
+  </item>
+  <item nodeId="node-0x160050">
+    <command xml:space="preserve">    otherwise say &quot;You have not enough money.&quot;</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="29">YES</temporary>
+  </item>
+  <item nodeId="node-0x7bd0ee0">
+    <command xml:space="preserve">place coin in machine</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+  </item>
+  <item nodeId="node-0xb328270">
+    <command xml:space="preserve">x vending machine</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="36">YES</temporary>
+    <children>
+      <child nodeId="node-0xb3c90a0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb3c90a0">
+    <command xml:space="preserve">x cigarette machine</command>
+    <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
+
+1 Engine - gold coin 1 Bumper - silver coin 1 Tail light - bronze coin 1 Tire - copper coin
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="35">YES</temporary>
+  </item>
+  <item nodeId="node-0xb31e610">
+    <command xml:space="preserve">x cigarette machine</command>
+    <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
+
+1 Engine - gold coin
+
+1 Bumper - silver coin
+
+1 Tail light - bronze coin
+
+1 Tire - copper coin
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="36">YES</temporary>
+  </item>
+  <item nodeId="node-0xb3c01f0">
+    <command xml:space="preserve">buy cake</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="5">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e0ca90" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e0ca90">
+    <command xml:space="preserve">x ogre</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="5">YES</temporary>
+    <children>
+      <child nodeId="node-0xb3c2050" />
+    </children>
+  </item>
+  <item nodeId="node-0xb3c2050">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a copper coin
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="5">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e19540" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e19540">
+    <command xml:space="preserve">give coin to ogre</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="4">YES</temporary>
+  </item>
+  <item nodeId="node-0xb32d9c0">
+    <command xml:space="preserve">x  cigarette machine</command>
+    <result xml:space="preserve">An old vending machine filled with many car parts including ENGINES, TIRES, TAIL LIGHTS, and BUMPERS.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="13">YES</temporary>
+  </item>
+  <item nodeId="node-0x14e380">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="51">YES</temporary>
+  </item>
+  <item nodeId="node-0x1d3910">
+    <command xml:space="preserve">give coin to cigarette machine </command>
+    <result xml:space="preserve">The machine rattles and drops an object down with a large thud.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c4e70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c4e70">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  an engine
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0xca83e10" />
+    </children>
+  </item>
+  <item nodeId="node-0xca83e10">
+    <command xml:space="preserve">give cigarette machine coin</command>
+    <result xml:space="preserve">(first taking the copper coin)
+That seems to belong to cigarette machine.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+  </item>
+  <item nodeId="node-0x15eb80">
+    <command xml:space="preserve">buy engine</command>
+    <result xml:space="preserve">The machine rattles and drops an object down with a large thud.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+  </item>
+  <item nodeId="node-0xc762800">
+    <command xml:space="preserve">use coin on machine</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0xb32fa50" />
+    </children>
+  </item>
+  <item nodeId="node-0xb32fa50">
+    <command xml:space="preserve">put coin in machine</command>
+    <result xml:space="preserve">He can&apos;t contain things.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0xb31ba90" />
+    </children>
+  </item>
+  <item nodeId="node-0xb31ba90">
+    <command xml:space="preserve">give coin to machine</command>
+    <result xml:space="preserve">The machine rattles and drops an object down with a large thud.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="46">YES</temporary>
+  </item>
+  <item nodeId="node-0xb31e350">
+    <command xml:space="preserve">talk to  cigarette machine</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="13">YES</temporary>
+    <children>
+      <child nodeId="node-0xb3e73d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb3e73d0">
+    <command xml:space="preserve">ask  cigarette machine about coin</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="13">YES</temporary>
+    <children>
+      <child nodeId="node-0xb31a200" />
+    </children>
+  </item>
+  <item nodeId="node-0xb31a200">
+    <command xml:space="preserve">x coin</command>
+    <result xml:space="preserve">You see nothing special about the copper coin.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="13">YES</temporary>
+    <children>
+      <child nodeId="node-0x1f0fe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1f0fe0">
+    <command xml:space="preserve">give  cigarette machine copper coin</command>
+    <result xml:space="preserve">The machine rattles and drops an object down with a large thud.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="13">YES</temporary>
+    <children>
+      <child nodeId="node-0xc881790" />
+    </children>
+  </item>
+  <item nodeId="node-0xc881790">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  an engine
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="13">YES</temporary>
+    <children>
+      <child nodeId="node-0xb33afa0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb33afa0">
+    <command xml:space="preserve">x  cigarette machine</command>
+    <result xml:space="preserve">You see nothing special about cigarette machine.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="12">YES</temporary>
+  </item>
+  <item nodeId="node-0x7b8a090">
+    <command xml:space="preserve">give machine coin</command>
+    <result xml:space="preserve">The machine rattles and drops an object down with a large thud.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">YES</temporary>
+  </item>
+  <item nodeId="node-0xb32d210">
+    <command xml:space="preserve">give cigarette machine copper coin</command>
+    <result xml:space="preserve">The machine rattles and drops an object down with a large thud.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="24">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c0870" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c0870">
+    <command xml:space="preserve">give cigarette machine blue coin</command>
+    <result xml:space="preserve">The machine rattles and drops an object down with a large thud.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="24">YES</temporary>
+    <children>
+      <child nodeId="node-0xb3473d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb3473d0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a bumper
+  an engine
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="23">YES</temporary>
+  </item>
+  <item nodeId="node-0xb3cf670">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a copper coin
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ef9e0" />
+      <child nodeId="node-0xc7210c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc7210c0">
+    <command xml:space="preserve">give The player carries a copper coin. The cigarette machine carries an engine. </command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0xc6a0290" />
+    </children>
+  </item>
+  <item nodeId="node-0xc6a0290">
+    <command xml:space="preserve">Instead of giving the coin to the cigarette machine: </command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e992a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e992a0">
+    <command xml:space="preserve">    now the cigarette machine carries the coin; </command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0xc723100" />
+    </children>
+  </item>
+  <item nodeId="node-0xc723100">
+    <command xml:space="preserve">    now the player carries the engine; </command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0xc7de500" />
+    </children>
+  </item>
+  <item nodeId="node-0xc7de500">
+    <command xml:space="preserve">    say &quot;The machine rattles and drops an object down with a large thud.&quot;</command>
+    <result xml:space="preserve">(to cigarette machine)
+There is no reply.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="20">YES</temporary>
+  </item>
+  <item nodeId="node-0x1ef9e0">
+    <command xml:space="preserve">open money in the dank</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">YES</temporary>
+    <children>
+      <child nodeId="node-0x162d70" />
+    </children>
+  </item>
+  <item nodeId="node-0x162d70">
+    <command xml:space="preserve">put copper coin in machine</command>
+    <result xml:space="preserve">He can&apos;t contain things.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">YES</temporary>
+    <children>
+      <child nodeId="node-0x14cb60" />
+    </children>
+  </item>
+  <item nodeId="node-0x14cb60">
+    <command xml:space="preserve">give copper coin to machine</command>
+    <result xml:space="preserve">The machine rattles and drops an object down with a large thud.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+  </item>
+  <item nodeId="node-0xb3bbfd0">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">(the copper coin)
+You see nothing special about the copper coin.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="27">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ce030" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ce030">
+    <command xml:space="preserve">x cigarette machine</command>
+    <result xml:space="preserve">An old vending machine filled with many car parts including ENGINES, TIRES, TAIL LIGHTS, and BUMPERS.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="26">YES</temporary>
+  </item>
+  <item nodeId="node-0xb3e2c70">
+    <command xml:space="preserve">give cigarette machine coin</command>
+    <result xml:space="preserve">Which do you mean, the copper coin or the blue coin?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="24">YES</temporary>
+  </item>
+  <item nodeId="node-0xc7b8dd0">
+    <command xml:space="preserve">put coin to machine</command>
+    <result xml:space="preserve">The machine rattles and drops an object down with a large thud.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="50">YES</temporary>
+  </item>
+  <item nodeId="node-0x15f3f0">
+    <command xml:space="preserve">put coin in machine</command>
+    <result xml:space="preserve">You can only do that to something animate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x155440" />
+      <child nodeId="node-0x7b6e340" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b6e340">
+    <command xml:space="preserve">give coin to machine</command>
+    <result xml:space="preserve">The machine rattles and drops an object down with a large thud.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="49">YES</temporary>
+  </item>
+  <item nodeId="node-0x155440">
+    <command xml:space="preserve">put coin in the cigarette machine</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="43">YES</temporary>
+  </item>
+</Skein>
