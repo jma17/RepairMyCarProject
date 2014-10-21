@@ -1,58 +1,29 @@
 "RepairMyCar" by Jaryd Ma
+ 
+Car Wreckage is a room. "_____________ Bathrooms are north. The Road Side is West. The Cigarette Vending Machine is East. The Hurt Runner is South."
 
-The Dump is a room. 
+Bathrooms is a room. "_______________ Car Wreckage is South. The Convenience Store is North."
+Bathrooms is north of Car Wreckage.
 
-Putting it in is an action applying to two things.
-Understand "put [thing] in [something]" as putting it in. 
+Convenience Store is a room. "____________ Bathrooms are South."
+Convenience Store is north of Bathrooms.
 
-The Vending Machine is scenery in The Dump. The Vending Machine is a transparent, openable container. The description of Vending Machine is "An old vending machine filled with many car parts. There is a sign on the machine.
+Car Repair Shop is a room. "________________________ The Cigarette Vending Machine is West."
 
-Engine - gold coin
+Car Repair Shop is west of Cigarette Vending Machine.
 
-Bumper - silver coin
+Cigarette Vending Machine is a room. "__________________ The Car Wreckage is West. The Car Repair Shop is East."
+Cigarette Vending Machine is East of Car Wreckage.
 
-Tail light - bronze coin
-
-Tire - copper coin."
-
-
-A Engine is in Vending Machine. The description of Engine is "A slightly used engine."
-
-
-
-Instead of buying the engine: 
-    if the player has the coin, try giving the coin to the cigarette machine; 
-    otherwise say "You don't have enough money."
-
-
-Instead of putting coins in Vending Machine: say "The coins make a pleasant 'clink, clunk' sound as they drop into the vending machine. You push the necessary buttons and your drink is delivered. You scoop it right up."; 
-    remove coins from play; 
-    move Tropical Drink to player instead.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Cigarette Vending Machine is a room. 
 
 Understand the command "put" as something new.
-Understand the command "put" as "give".
+Understand the command "put" as "give"
 
 
 
-in Cigarette Vending Machine is a male person called cigarette machine. the description of cigarette machine is "An old vending machine filled with many car parts. There is a sign on the machine.
+in Cigarette Vending Machine is a male person called the cigarette machine. the description of cigarette machine is "An old vending machine filled with many car parts. There is a sign on the machine.
 
-Engine - gold coin
+Engine - mysterious coin
 
 Bumper - silver coin
 
@@ -60,23 +31,38 @@ Tail light - bronze coin
 
 Tire - copper coin"
 
-The player carries a copper coin. The cigarette machine carries an engine. 
-Instead of giving the copper coin to the cigarette machine: 
-    now the cigarette machine carries the copper coin; 
+ If the player carries a mysterious coin. The cigarette machine carries an engine. 
+Instead of giving the mysterious coin to the cigarette machine: 
+    now the cigarette machine carries the mysterious coin; 
     now the player carries the engine; 
 remove copper coin from play;
-    say "The machine rattles and drops an object down with a large thud."
+    say "The machine rattles and drops an engine with a large thud. You reach in and grab it."
 
    Instead of buying the engine: 
     if the player has the coin, try giving the coin to the cigarette machine; 
     otherwise say "You don't have enough money."
 
-If the player carries a blue coin. The cigarette machine carries a bumper. 
-Instead of giving the blue coin to the cigarette machine: 
-    now the cigarette machine carries the blue coin; 
+
+
+The player carries a bronze coin. The cigarette machine carries a tail light. 
+Instead of giving the bronze coin to the cigarette machine: 
+    now the cigarette machine carries the bronze coin; 
     now the player carries the bumper; 
-remove blue coin from play;
-    say "The machine rattles and drops an object down with a large thud."
+remove bronze coin from play;
+    say "The machine rattles and drops a tail light with a large thud. You reach in and grab it."
+
+Instead of buying the tail light: 
+    if the player has the coin, try giving the coin to the cigarette machine; 
+    otherwise say "You don't have enough money."
+
+
+
+If the player carries a silver coin. The cigarette machine carries a bumper. 
+Instead of giving the silver coin to the cigarette machine: 
+    now the cigarette machine carries the silver coin; 
+    now the player carries the bumper; 
+remove silver coin from play;
+    say "The machine rattles and drops a bumber with a large thud. You reach in and grab it."
 
 Instead of buying the bumper: 
     if the player has the coin, try giving the coin to the cigarette machine; 
@@ -84,6 +70,16 @@ Instead of buying the bumper:
 
 
 
+If the player carries a copper coin. The cigarette machine carries a tire. 
+Instead of giving the copper coin to the cigarette machine: 
+    now the cigarette machine carries the copper coin; 
+    now the player carries the tire; 
+remove copper coin from play;
+    say "The machine rattles and drops a tire with a large thud. You reach in and grab it."
+
+Instead of buying the tire: 
+    if the player has the coin, try giving the coin to the cigarette machine; 
+    otherwise say "You don't have enough money."
 
 
 
@@ -95,18 +91,14 @@ Instead of buying the bumper:
 
 
 
-A Tropical Drink is in Vending Machine. It is edible. The description of Tropical Drink is "You need this drink. Right now. Its orangey-yellow liquid awesomeness will wash the salty chip aftertaste out of your mouth." 
-The Vending Machine is scenery in West Room. The Vending Machine is a transparent, openable container. The description of Vending Machine is "Your curiosity about what a vending machine is doing here is brushed aside as you only have eyes for what it holds…a cool tropical drink! There's a sign on the vending machine that says you need to 'put coins in vending machine' to make a purchase.'"
-
-Instead of taking Tropical Drink, say "As much as you desperately want that sweet drink, you're going to have to pay for it. Where can you find some coins?"
 
 
 
-Instead of buying: 
-    if the noun is drink, say "Do you have coins? Try 'put coins in machine' instead. If you don't have coins, see if you can ask someone about coins." instead;
-    if the noun is not drink, say "That's not for sale."
 
 
-Instead of putting coins in Vending Machine: say "The coins make a pleasant 'clink, clunk' sound as they drop into the vending machine. You push the necessary buttons and your drink is delivered. You scoop it right up."; 
-    remove coins from play; 
-    move Tropical Drink to player instead.
+
+
+
+
+
+
