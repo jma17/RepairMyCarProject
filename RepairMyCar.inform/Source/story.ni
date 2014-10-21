@@ -13,7 +13,7 @@ Car Repair Shop is a room. "________________________ The Cigarette Vending Machi
 Car Repair Shop is west of Cigarette Vending Machine.
 
 Cigarette Vending Machine is a room. "__________________ The Car Wreckage is West. The Car Repair Shop is East."
-Cigarette Vending Machine is East of Car Wreckage.
+Cigarette Vending Machine is east of Car Wreckage.
 
 
 Understand the command "put" as something new.
