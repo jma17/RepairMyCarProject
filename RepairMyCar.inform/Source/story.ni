@@ -1,19 +1,49 @@
 "RepairMyCar" by Jaryd Ma
  
-Car Wreckage is a room. "_____________ Bathrooms are north. The Road Side is West. The Cigarette Vending Machine is East. The Hurt Runner is South."
+the description of the player is "You are stressed out, with blood shot eyes, and messy hair. You just want to go home."
 
-Bathrooms is a room. "_______________ Car Wreckage is South. The Convenience Store is North."
+
+
+
+Car Wreckage is a room. "_____________ Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South."
+
+Bathrooms is a room. "_______________ Car wreckage is South. The Convenience Store is North."
 Bathrooms is north of Car Wreckage.
 
 Convenience Store is a room. "____________ Bathrooms are South."
 Convenience Store is north of Bathrooms.
 
-Car Repair Shop is a room. "________________________ The Cigarette Vending Machine is West."
+Car Repair Shop is a room. "________________________ The cigarette vending machine is West."
 
-Car Repair Shop is west of Cigarette Vending Machine.
+Car Repair Shop is east of Cigarette Vending Machine.
 
-Cigarette Vending Machine is a room. "__________________ The Car Wreckage is West. The Car Repair Shop is East."
+Cigarette Vending Machine is a room. "__________________ The car wreckage is West. The car repair shop is East."
 Cigarette Vending Machine is east of Car Wreckage.
+
+ A Dead End is a room. "__________________ The car wreckage is North. The forest is South."
+A Dead End is south of the Car Wreckage.
+
+The Forest is a room. "___________________ The dead end is North.
+The Forest is south of the dead end."
+The Forest is south of the Dead End.
+
+The Roadside is a room. "The roadside is deserted except for some trash on the side of the curb. There is a old street light next to you. The car wreckage is East."
+
+Old street light is a thing in the roadside. It is scenery. The description is "rusty and silver. There is nothing special about it."
+
+trash is a thing in the roadside. It is scenery. It is undescribed. The description is "You see a smashed soda can, a gum wrapper and a copper coin."
+
+Copper coin is a thing in the roadside. It is undescribed. The description is "A rusty copper coin. You can't see anything unusual about it."
+
+
+
+
+
+smashed soda can is a thing in the roadside. It is undescribed. The description is "a smashed diet soda can."
+
+Gum wrapper is a thing in the roadside. It is undescribed. The description is "an old gum wrapper that smells like mint."
+
+The Roadside is west of Car Wreckage.
 
 
 Understand the command "put" as something new.
@@ -57,7 +87,7 @@ Instead of buying the tail light:
 
 
 
-If the player carries a silver coin. The cigarette machine carries a bumper. 
+if the player carries a silver coin. The cigarette machine carries a bumper. 
 Instead of giving the silver coin to the cigarette machine: 
     now the cigarette machine carries the silver coin; 
     now the player carries the bumper; 
@@ -70,7 +100,7 @@ Instead of buying the bumper:
 
 
 
-If the player carries a copper coin. The cigarette machine carries a tire. 
+If the player carries a copper dollar. The cigarette machine carries a tire. 
 Instead of giving the copper coin to the cigarette machine: 
     now the cigarette machine carries the copper coin; 
     now the player carries the tire; 
