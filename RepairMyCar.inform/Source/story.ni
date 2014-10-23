@@ -5,29 +5,110 @@ the description of the player is "You are stressed out, with blood shot eyes, an
 
 
 
-Car Wreckage is a room. "_____________ Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South."
+Car Wreckage is a room. "Your car is a total wreck, you need to fix it ASAP. 
 
-Bathrooms is a room. "_______________ Car wreckage is South. The Convenience Store is North."
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South."
+
+Your Car is a thing in the Car Wreckage. It is scenery. It is undescribed. The description is "Your 18th birthday present is now needing a new a tire, tail light, engine and bumper."
+
+Bathrooms is a room. "A ordinary public bathroom. There is graffiti on the walls, an overflowing rubbish can, and no toilet paper. 
+
+Car wreckage is South. The Convenience Store is North."
 Bathrooms is north of Car Wreckage.
 
-Convenience Store is a room. "____________ Bathrooms are South."
+Rubbish can is a thing in the bathrooms. It is undescribed. It is scenery. The description is "An overflowing trash can, nothing special."
+
+Toilet is a thing in the bathrooms. It is undescribed. It is scenery. The description is "Something is clogging the toilet, you look closer and see something shiney. You reluctantly reach in and grab it. 
+
+It's a silver coin!" 
+
+Instead of examining toilet: say "Something is clogging the toilet, you look closer and see something shiney. You reluctantly reach in and grab it. 
+
+It's a silver coin!"; move silver coin to player.
+
+silver coin is a thing. It is undescribed. The description is "A European coin from 1887."
+
+
+Graffiti is a thing in the bathrooms. It is undescribed. It is scenery. The description is "I droPPeD soMEThinG iN THE toiLeT :)"
+
+Convenience Store is a room. " An air conditioned store with bright lights. There is a cashier at the front. Bathrooms are South."
+
+In Convenience Store is a male person called Cashier. The description of Cashier is "A fake smile and a red apron verifies that he is the cashier. His arpon says 'I AM HERE TO HELP YOU!'"
+
+instead of asking the Cashier about "water": say "Sure, we got some. Since you are the 100th costumer today, I will give it to you for free! Congratulations!"; move water bottle to player.
+
+
+
+
+Water bottle is a thing in the convenience store. It is undescribed. The description is "An ordinary bottle of water."
+
 Convenience Store is north of Bathrooms.
 
-Car Repair Shop is a room. "________________________ The cigarette vending machine is West."
+Car Repair Shop is a room. "A poor lit garage gives you the impression that buisness is slow. The walls are baren and there there is nothing much here. You wonder if this is even the right place. There is a man named Jack sitting down behind a desk. 
+
+
+The cigarette vending machine is West."
 
 Car Repair Shop is east of Cigarette Vending Machine.
 
-Cigarette Vending Machine is a room. "__________________ The car wreckage is West. The car repair shop is East."
+
+In Car Repair Shop is a male person called Jack. The description of Jack is "A tired looking man with a wizard like beard. He is wearing a t-shirt and jeans."
+
+instead of asking the Jack about "car": say "Your car need fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts,  I will fix your car up."
+
+instead of asking the Jack about "broken car": say "Your car need fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts,  I will fix your car up."
+
+instead of asking the Jack about "repairing car": say "Your car need fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts,  I will fix your car up."
+
+instead of asking the Jack about "car repair": say "Your car need fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts,  I will fix your car up."
+
+Instead of giving the engine to Jack: say "You give the engine to Jack and his eyes light up. 
+
+'Wow, this will definetly work. Just need a few more part until your car looks new again!"; move the engine to Jack.
+
+Instead of giving the bumper to Jack: say "You give the bumper to Jack and he smiles. 
+
+'Good, this will definetly work. Just need a few more part until your car looks new again!'"; move the bumper to Jack.
+
+Instead of giving the tail light to Jack: say "You give the tail light to Jack and gives you a thumbs up. 
+
+'Excellent, this will do just fine. Just need a few more part until your car looks new again!'"; move the tail light to Jack.
+
+Instead of giving the tire to Jack: say "You give the tire to Jack and gives you a pat on the back. 
+
+'Great job, this will do. Just need a few more part until your car looks new again!'"; move the tire to Jack.
+
+Cigarette Vending Machine is a room. "An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East."
 Cigarette Vending Machine is east of Car Wreckage.
 
- A Dead End is a room. "__________________ The car wreckage is North. The forest is South."
+ A Dead End is a room. "There is a hurt runner stretching on the curb. He looks like he needs help. 
+
+The car wreckage is North. The forest is South."
+
 A Dead End is south of the Car Wreckage.
 
-The Forest is a room. "___________________ The dead end is North.
-The Forest is south of the dead end."
+Instead of giving the water bottle to Hurt Runner: say "You hand the water bottle to the hurt runner and he immidiatly drinks it. 
+
+'Thanks for the water man, my cramping is finally going away. Here is a mysterious coin, you deserve it!'"; remove the water bottle from play; move mysterious coin to player.
+
+In Dead End is a male person called Hurt Runner. The description of Hurt Runner is "He looks tired and sweaty, it seems like his leg is cramping up."
+
+instead of asking the Hurt Runner about "leg": say "I can't move becuase my leg is cramping hard, do you have any water?"
+
+instead of asking the Hurt Runner about "leg cramp": say "I can't move becuase my leg is cramping hard, do you have any water?"
+
+instead of asking the Hurt Runner about "cramp": say "I can't move becuase my leg is cramping hard, do you have any water?"
+
+instead of asking the Hurt Runner about "cramping leg": say "I can't move becuase my leg is cramping hard, do you have any water?"
+
+The Forest is a room. "What lies beyond here is a mystery. All you see is tall trees. The dead end is North."
+
+tall trees is a thing in the forest. it is scenery. The description is "sturdy oak trees, looks like they have been here for many years."
 The Forest is south of the Dead End.
 
-The Roadside is a room. "The roadside is deserted except for some trash on the side of the curb. There is a old street light next to you. The car wreckage is East."
+The Roadside is a room. "The roadside is deserted except for some trash on the side of the curb. There is a old street light next to you. 
+
+The car wreckage is East."
 
 Old street light is a thing in the roadside. It is scenery. The description is "rusty and silver. There is nothing special about it."
 
@@ -48,6 +129,7 @@ The Roadside is west of Car Wreckage.
 
 Understand the command "put" as something new.
 Understand the command "put" as "give"
+
 
 
 
@@ -113,15 +195,16 @@ Instead of buying the tire:
 
 
 
+Understand the command "buy" as something new.
+Understand the command "buy" as "give"
 
 
-
-
-
-
-
-
-
+Every turn rule:
+	If Jack is carrying the tire:
+		If Jack is carrying the engine:
+			If Jack is carrying the tail light:
+				If Jack is carrying the bumper:
+					end the story finally saying "You hand the last part to Jack and he quickly fixes your car. Your car almost looks like new again! You thank him and get into your car. Feeling so relieved, you drive home at last. YOU WIN!"
 
 
 
