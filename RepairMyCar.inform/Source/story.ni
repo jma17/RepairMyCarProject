@@ -1,3 +1,4 @@
+
 "RepairMyCar" by Jaryd Ma
  
 the description of the player is "You are stressed out, with blood shot eyes, and messy hair. You just want to go home."
@@ -150,22 +151,13 @@ Instead of giving the mysterious coin to the cigarette machine:
 remove copper coin from play;
     say "The machine rattles and drops an engine with a large thud. You reach in and grab it."
 
-   Instead of buying the engine: 
-    if the player has the coin, try giving the coin to the cigarette machine; 
-    otherwise say "You don't have enough money."
+Instead of buying the engine:
+	if the player has the mysterious coin, try giving the mysterious coin to the cigarette machine;
+	otherwise say "You don't have enough money."
 
 
 
-The player carries a bronze coin. The cigarette machine carries a tail light. 
-Instead of giving the bronze coin to the cigarette machine: 
-    now the cigarette machine carries the bronze coin; 
-    now the player carries the bumper; 
-remove bronze coin from play;
-    say "The machine rattles and drops a tail light with a large thud. You reach in and grab it."
 
-Instead of buying the tail light: 
-    if the player has the coin, try giving the coin to the cigarette machine; 
-    otherwise say "You don't have enough money."
 
 
 
@@ -176,9 +168,9 @@ Instead of giving the silver coin to the cigarette machine:
 remove silver coin from play;
     say "The machine rattles and drops a bumber with a large thud. You reach in and grab it."
 
-Instead of buying the bumper: 
-    if the player has the coin, try giving the coin to the cigarette machine; 
-    otherwise say "You don't have enough money."
+Instead of buying the bumper:
+	if the player has the silver coin, try giving the silver coin to the cigarette machine;
+	otherwise say "You don't have enough money."
 
 
 
@@ -189,14 +181,27 @@ Instead of giving the copper coin to the cigarette machine:
 remove copper coin from play;
     say "The machine rattles and drops a tire with a large thud. You reach in and grab it."
 
-Instead of buying the tire: 
-    if the player has the coin, try giving the coin to the cigarette machine; 
-    otherwise say "You don't have enough money."
+Instead of buying the tire:
+	if the player has the copper coin, try giving the copper coin to the cigarette machine;
+	otherwise say "You don't have enough money."
 
 
 
-Understand the command "buy" as something new.
-Understand the command "buy" as "give"
+
+
+
+The player carries a bronze coin. The cigarette machine carries a tail light. 
+Instead of giving the bronze coin to the cigarette machine: 
+    now the cigarette machine carries the bronze coin; 
+    now the player carries the bumper; 
+remove bronze coin from play;
+    say "The machine rattles and drops a tail light with a large thud. You reach in and grab it."
+
+Instead of buying the tail light:
+	if the player has the bronze coin, try giving the bronze coin to the cigarette machine;
+	otherwise say "You don't have enough money."
+
+
 
 
 Every turn rule:
@@ -205,7 +210,6 @@ Every turn rule:
 			If Jack is carrying the tail light:
 				If Jack is carrying the bumper:
 					end the story finally saying "You hand the last part to Jack and he quickly fixes your car. Your car almost looks like new again! You thank him and get into your car. Feeling so relieved, you drive home at last. YOU WIN!"
-
 
 
 
