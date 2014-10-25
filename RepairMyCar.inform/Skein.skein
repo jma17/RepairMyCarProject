@@ -1,15 +1,17 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x69ed0e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x155320" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0xf455e70" />
-  <item nodeId="node-0x69ed0e0">
+  <activeNode nodeId="node-0x155320" />
+  <item nodeId="node-0x155320">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
+Driving home one night, you fall asleep when you are on the highway. You wake up with a bloody nose and you wonder what just happened. You climb out of your car and see that it is totally wrecked. Luckily you crashed and no one was hurt. You realize that you have to find a repair shop fast because you don&apos;t want your parents to know where you are. You reach into the glove compartment for money and all you find is a bronze coin.
+
 RepairMyCar
 An Interactive Fiction by Jaryd Ma
-Release 1 / Serial number 141022 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 141024 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
 
 Car Wreckage
 Your car is a total wreck, you need to fix it ASAP.
@@ -19,47 +21,689 @@ Bathrooms are north. The roadside is West. The cigarette vending machine is East
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="168">NO</temporary>
+    <temporary score="128">NO</temporary>
     <children>
-      <child nodeId="node-0xf4c77e0" />
-      <child nodeId="node-0xf4c5a90" />
-      <child nodeId="node-0xf4c5400" />
-      <child nodeId="node-0xf4c3ed0" />
-      <child nodeId="node-0xf4c49e0" />
+      <child nodeId="node-0x6888270" />
+      <child nodeId="node-0x6886830" />
+      <child nodeId="node-0x155010" />
+      <child nodeId="node-0x155370" />
+      <child nodeId="node-0x986d870" />
     </children>
   </item>
-  <item nodeId="node-0xf4c49e0">
-    <command xml:space="preserve">put coin in machine</command>
-    <result xml:space="preserve">You can only do that to something animate.
+  <item nodeId="node-0x986d870">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Bathrooms
+A ordinary public bathroom. There is graffiti on the walls, an overflowing rubbish can, and no toilet paper.
+
+Car wreckage is South. The Convenience Store is North.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="61">YES</temporary>
+    <temporary score="57">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c5320" />
+      <child nodeId="node-0x98afcd0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c5320">
+  <item nodeId="node-0x98afcd0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Convenience Store
+ An air conditioned store with bright lights. There is a cashier at the front. Bathrooms are South.
+
+You can see Cashier here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x6880320" />
+    </children>
+  </item>
+  <item nodeId="node-0x6880320">
+    <command xml:space="preserve">ask cashier about water</command>
+    <result xml:space="preserve">Sure, we got some. Since you are the 100th costumer today, I will give it to you for free! Congratulations!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x98740e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x98740e0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Bathrooms
+A ordinary public bathroom. There is graffiti on the walls, an overflowing rubbish can, and no toilet paper.
+
+Car wreckage is South. The Convenience Store is North.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x98d8930" />
+    </children>
+  </item>
+  <item nodeId="node-0x98d8930">
+    <command xml:space="preserve">x toilet</command>
+    <result xml:space="preserve">Something is clogging the toilet, you look closer and see something shiney. You reluctantly reach in and grab it.
+
+It&apos;s a silver coin!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x4a98d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x4a98d0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x6881d10" />
+    </children>
+  </item>
+  <item nodeId="node-0x6881d10">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Roadside
+The roadside is deserted except for some trash on the side of the curb. There is a old street light next to you.
+
+The car wreckage is East.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x11d080" />
+    </children>
+  </item>
+  <item nodeId="node-0x11d080">
+    <command xml:space="preserve">take copper</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x68ae190" />
+    </children>
+  </item>
+  <item nodeId="node-0x68ae190">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x68c1fd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x68c1fd0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Dead End
+There is a hurt runner stretching on the curb. He looks like he needs help.
+
+The car wreckage is North. The forest is South.
+
+You can see Hurt Runner here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x986ed60" />
+    </children>
+  </item>
+  <item nodeId="node-0x986ed60">
+    <command xml:space="preserve">give runner water</command>
+    <result xml:space="preserve">You hand the water bottle to the hurt runner and he immidiatly drinks it.
+
+&quot;Thanks for the water man, my cramping is finally going away. Here is a mysterious coin, you deserve it!&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x98df480" />
+    </children>
+  </item>
+  <item nodeId="node-0x98df480">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x988f600" />
+    </children>
+  </item>
+  <item nodeId="node-0x988f600">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Cigarette Vending Machine
+An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East.
+
+You can see the cigarette machine here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x68cda80" />
+    </children>
+  </item>
+  <item nodeId="node-0x68cda80">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a mysterious coin
+  Copper coin
+  silver coin
+  a bronze coin
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x986f9f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x986f9f0">
+    <command xml:space="preserve">give mysterious coin to machine</command>
+    <result xml:space="preserve">The machine rattles and drops an engine with a large thud. You reach in and grab it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x9896a30" />
+    </children>
+  </item>
+  <item nodeId="node-0x9896a30">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  an engine
+  silver coin
+  a bronze coin
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x68a7840" />
+    </children>
+  </item>
+  <item nodeId="node-0x68a7840">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="61">YES</temporary>
+    <temporary score="57">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c5390" />
+      <child nodeId="node-0x98b9ce0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c5390">
-    <command xml:space="preserve">put coin in machine</command>
-    <result xml:space="preserve">&gt;</result>
+  <item nodeId="node-0x98b9ce0">
+    <command xml:space="preserve">give silver coin to machine</command>
+    <result xml:space="preserve">The machine rattles and drops a bumber with a large thud. You reach in and grab it.
+
+&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="60">YES</temporary>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x9875130" />
+    </children>
   </item>
-  <item nodeId="node-0xf4c3ed0">
+  <item nodeId="node-0x9875130">
+    <command xml:space="preserve">give bronze coin to machine</command>
+    <result xml:space="preserve">The machine rattles and drops a tail light with a large thud. You reach in and grab it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x6151a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6151a0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a tail light
+  a bumper
+  an engine
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x988e030" />
+    </children>
+  </item>
+  <item nodeId="node-0x988e030">
+    <command xml:space="preserve">x machine</command>
+    <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
+
+Engine - mysterious coin
+
+Bumper - silver coin
+
+Tail light - bronze coin
+
+Tire - copper coin
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x9896170" />
+    </children>
+  </item>
+  <item nodeId="node-0x9896170">
+    <command xml:space="preserve">buy tire</command>
+    <result xml:space="preserve">You don&apos;t have enough money.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x98de520" />
+    </children>
+  </item>
+  <item nodeId="node-0x98de520">
+    <command xml:space="preserve">give copper coin to machine</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x18dc30" />
+    </children>
+  </item>
+  <item nodeId="node-0x18dc30">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x68b19b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x68b19b0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x988df50" />
+    </children>
+  </item>
+  <item nodeId="node-0x988df50">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="56">YES</temporary>
+  </item>
+  <item nodeId="node-0x155370">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">No cheating
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x983df90" />
+    </children>
+  </item>
+  <item nodeId="node-0x983df90">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Bathrooms
+A ordinary public bathroom. There is graffiti on the walls, an overflowing rubbish can, and no toilet paper.
+
+Car wreckage is South. The Convenience Store is North.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x98a8380" />
+    </children>
+  </item>
+  <item nodeId="node-0x98a8380">
+    <command xml:space="preserve">x trash can</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x985f680" />
+    </children>
+  </item>
+  <item nodeId="node-0x985f680">
+    <command xml:space="preserve">x rubbish can</command>
+    <result xml:space="preserve">An overflowing trash can, nothing special.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x6e0340" />
+    </children>
+  </item>
+  <item nodeId="node-0x6e0340">
+    <command xml:space="preserve">x graffiti</command>
+    <result xml:space="preserve">I droPPeD soMEThinG iN THE toiLeT :)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x9854b70" />
+    </children>
+  </item>
+  <item nodeId="node-0x9854b70">
+    <command xml:space="preserve">x toilet</command>
+    <result xml:space="preserve">Something is clogging the toilet, you look closer and see something shiney. You reluctantly reach in and grab it.
+
+It&apos;s a silver coin!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x68c01f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x68c01f0">
+    <command xml:space="preserve">eat coin</command>
+    <result xml:space="preserve">Which do you mean, silver coin or the bronze coin?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x20e52f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20e52f0">
+    <command xml:space="preserve">bronze coin</command>
+    <result xml:space="preserve">That&apos;s plainly inedible.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x187780" />
+    </children>
+  </item>
+  <item nodeId="node-0x187780">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x68bd810" />
+    </children>
+  </item>
+  <item nodeId="node-0x68bd810">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Roadside
+The roadside is deserted except for some trash on the side of the curb. There is a old street light next to you.
+
+The car wreckage is East.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x132730" />
+    </children>
+  </item>
+  <item nodeId="node-0x132730">
+    <command xml:space="preserve">x trash</command>
+    <result xml:space="preserve">You see a smashed soda can, a gum wrapper and a copper coin.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x98e26e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x98e26e0">
+    <command xml:space="preserve">take copper coin</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x6e29b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6e29b0">
+    <command xml:space="preserve">take gum wrapper</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x986f2f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x986f2f0">
+    <command xml:space="preserve">take soda can</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x9869b50" />
+    </children>
+  </item>
+  <item nodeId="node-0x9869b50">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x98b3f50" />
+    </children>
+  </item>
+  <item nodeId="node-0x98b3f50">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Cigarette Vending Machine
+An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East.
+
+You can see the cigarette machine here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e0c50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e0c50">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x98f8ba0" />
+    </children>
+  </item>
+  <item nodeId="node-0x98f8ba0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Dead End
+There is a hurt runner stretching on the curb. He looks like he needs help.
+
+The car wreckage is North. The forest is South.
+
+You can see Hurt Runner here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x98d8a90" />
+    </children>
+  </item>
+  <item nodeId="node-0x98d8a90">
+    <command xml:space="preserve">take runner</command>
+    <result xml:space="preserve">I don&apos;t suppose Hurt Runner would care for that.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x984f3c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x984f3c0">
+    <command xml:space="preserve">x runner</command>
+    <result xml:space="preserve">He looks tired and sweaty, it seems like his leg is cramping up.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x98692f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x98692f0">
+    <command xml:space="preserve">chop runner&apos;s leg off with soda can</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x984b4c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x984b4c0">
+    <command xml:space="preserve">talk to runner</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x20cc050" />
+    </children>
+  </item>
+  <item nodeId="node-0x20cc050">
+    <command xml:space="preserve">ask runner</command>
+    <result xml:space="preserve">What do you want to ask Hurt Runner for?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="79">YES</temporary>
+  </item>
+  <item nodeId="node-0x155010">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Cigarette Vending Machine
@@ -70,14 +714,43 @@ You can see the cigarette machine here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="143">YES</temporary>
+    <temporary score="128">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c43c0" />
-      <child nodeId="node-0xf4bb440" />
-      <child nodeId="node-0x10faf0" />
+      <child nodeId="node-0x6885ef0" />
+      <child nodeId="node-0x68856b0" />
+      <child nodeId="node-0x155100" />
+      <child nodeId="node-0x155060" />
     </children>
   </item>
-  <item nodeId="node-0x10faf0">
+  <item nodeId="node-0x155060">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Car Repair Shop
+A poor lit garage gives you the impression that buisness is slow. The walls are baren and there there is nothing much here. You wonder if this is even the right place. There is a man named Jack sitting down behind a desk.
+
+
+The cigarette vending machine is West.
+
+You can see Jack here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="171">YES</temporary>
+    <children>
+      <child nodeId="node-0x1550b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1550b0">
+    <command xml:space="preserve">hit jack</command>
+    <result xml:space="preserve">Violence isn&apos;t the answer to this one.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="170">YES</temporary>
+  </item>
+  <item nodeId="node-0x155100">
     <command xml:space="preserve">x machine</command>
     <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
 
@@ -92,13 +765,37 @@ Tire - copper coin
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="143">YES</temporary>
+    <temporary score="84">YES</temporary>
     <children>
-      <child nodeId="node-0xf483910" />
-      <child nodeId="node-0x14e93bf0" />
+      <child nodeId="node-0x6885610" />
+      <child nodeId="node-0x155170" />
+      <child nodeId="node-0xc76e430" />
     </children>
   </item>
-  <item nodeId="node-0x14e93bf0">
+  <item nodeId="node-0xc76e430">
+    <command xml:space="preserve">buy light</command>
+    <result xml:space="preserve">The machine rattles and drops a tail light with a large thud. You reach in and grab it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="84">YES</temporary>
+    <children>
+      <child nodeId="node-0xc75a6d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc75a6d0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a tail light
+  a bumper
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="83">YES</temporary>
+  </item>
+  <item nodeId="node-0x155170">
     <command xml:space="preserve">buy tail light</command>
     <result xml:space="preserve">The machine rattles and drops a tail light with a large thud. You reach in and grab it.
 
@@ -107,7 +804,7 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="142">YES</temporary>
   </item>
-  <item nodeId="node-0xf483910">
+  <item nodeId="node-0x6885610">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a bronze coin
@@ -117,10 +814,10 @@ Tire - copper coin
     <changed>NO</changed>
     <temporary score="140">YES</temporary>
     <children>
-      <child nodeId="node-0x6943780" />
+      <child nodeId="node-0x6885660" />
     </children>
   </item>
-  <item nodeId="node-0x6943780">
+  <item nodeId="node-0x6885660">
     <command xml:space="preserve">buy tail light</command>
     <result xml:space="preserve">You don&apos;t have enough money.
 
@@ -129,21 +826,21 @@ Tire - copper coin
     <changed>NO</changed>
     <temporary score="139">YES</temporary>
   </item>
-  <item nodeId="node-0xf4bb440">
+  <item nodeId="node-0x68856b0">
     <command xml:space="preserve">buy tail light</command>
     <result xml:space="preserve">The machine rattles and drops a tail light with a large thud. You reach in and grab it.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="129">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="128">YES</temporary>
     <children>
-      <child nodeId="node-0xf40a920" />
-      <child nodeId="node-0xf4f6940" />
-      <child nodeId="node-0x400a70" />
+      <child nodeId="node-0x155200" />
+      <child nodeId="node-0x6885770" />
+      <child nodeId="node-0x6885700" />
     </children>
   </item>
-  <item nodeId="node-0x400a70">
+  <item nodeId="node-0x6885700">
     <command xml:space="preserve">x machine</command>
     <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
 
@@ -160,7 +857,7 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="128">YES</temporary>
   </item>
-  <item nodeId="node-0xf4f6940">
+  <item nodeId="node-0x6885770">
     <command xml:space="preserve">give machine coin</command>
     <result xml:space="preserve">The machine rattles and drops a tail light with a large thud. You reach in and grab it.
 
@@ -169,10 +866,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="126">YES</temporary>
     <children>
-      <child nodeId="node-0xbcaece0" />
+      <child nodeId="node-0x68858a0" />
     </children>
   </item>
-  <item nodeId="node-0xbcaece0">
+  <item nodeId="node-0x68858a0">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a bumper
@@ -182,20 +879,658 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="125">YES</temporary>
   </item>
-  <item nodeId="node-0xf40a920">
+  <item nodeId="node-0x155200">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
-  a bronze coin
+  a tail light
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="112">YES</temporary>
+    <temporary score="128">YES</temporary>
     <children>
-      <child nodeId="node-0xbcbba70" />
+      <child nodeId="node-0x6885910" />
+      <child nodeId="node-0xc7a7230" />
     </children>
   </item>
-  <item nodeId="node-0xbcbba70">
+  <item nodeId="node-0xc7a7230">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc7703b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc7703b0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Roadside
+The roadside is deserted except for some trash on the side of the curb. There is a old street light next to you.
+
+The car wreckage is East.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc790180" />
+    </children>
+  </item>
+  <item nodeId="node-0xc790180">
+    <command xml:space="preserve">take copper</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc79a2f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc79a2f0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0x1014d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1014d0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Cigarette Vending Machine
+An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East.
+
+You can see the cigarette machine here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc780870" />
+    </children>
+  </item>
+  <item nodeId="node-0xc780870">
+    <command xml:space="preserve">x machine</command>
+    <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
+
+Engine - mysterious coin
+
+Bumper - silver coin
+
+Tail light - bronze coin
+
+Tire - copper coin
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0x20d7d60" />
+    </children>
+  </item>
+  <item nodeId="node-0x20d7d60">
+    <command xml:space="preserve">buy tire</command>
+    <result xml:space="preserve">The machine rattles and drops a tire with a large thud. You reach in and grab it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xb2866f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb2866f0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a tire
+  a tail light
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc78f810" />
+    </children>
+  </item>
+  <item nodeId="node-0xc78f810">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc75fa10" />
+    </children>
+  </item>
+  <item nodeId="node-0xc75fa10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Bathrooms
+A ordinary public bathroom. There is graffiti on the walls, an overflowing rubbish can, and no toilet paper.
+
+Car wreckage is South. The Convenience Store is North.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc79cc80" />
+    </children>
+  </item>
+  <item nodeId="node-0xc79cc80">
+    <command xml:space="preserve">x toilet</command>
+    <result xml:space="preserve">Something is clogging the toilet, you look closer and see something shiney. You reluctantly reach in and grab it.
+
+It&apos;s a silver coin!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc779040" />
+    </children>
+  </item>
+  <item nodeId="node-0xc779040">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Silver coin
+  a tire
+  a tail light
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc78a6f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc78a6f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc759de0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc759de0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Cigarette Vending Machine
+An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East.
+
+You can see the cigarette machine here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc76ded0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc76ded0">
+    <command xml:space="preserve">x machine</command>
+    <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
+
+Engine - mysterious coin
+
+Bumper - silver coin
+
+Tail light - bronze coin
+
+Tire - copper coin
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc774590" />
+    </children>
+  </item>
+  <item nodeId="node-0xc774590">
+    <command xml:space="preserve">buy bumper</command>
+    <result xml:space="preserve">The machine rattles and drops a bumber with a large thud. You reach in and grab it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc788bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc788bb0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a bumper
+  a tire
+  a tail light
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0x11c430" />
+    </children>
+  </item>
+  <item nodeId="node-0x11c430">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xb2b9bd0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb2b9bd0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Roadside
+The roadside is deserted except for some trash on the side of the curb. There is a old street light next to you.
+
+The car wreckage is East.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0x18b2f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18b2f0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xb2aba40" />
+    </children>
+  </item>
+  <item nodeId="node-0xb2aba40">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xb27d7b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb27d7b0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Bathrooms
+A ordinary public bathroom. There is graffiti on the walls, an overflowing rubbish can, and no toilet paper.
+
+Car wreckage is South. The Convenience Store is North.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc7a9570" />
+    </children>
+  </item>
+  <item nodeId="node-0xc7a9570">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Convenience Store
+ An air conditioned store with bright lights. There is a cashier at the front. Bathrooms are South.
+
+You can see Cashier here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc7bedd0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc7bedd0">
+    <command xml:space="preserve">ask cashier about water</command>
+    <result xml:space="preserve">Sure, we got some. Since you are the 100th costumer today, I will give it to you for free! Congratulations!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc7683c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc7683c0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Bathrooms
+A ordinary public bathroom. There is graffiti on the walls, an overflowing rubbish can, and no toilet paper.
+
+Car wreckage is South. The Convenience Store is North.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0x4cd860" />
+    </children>
+  </item>
+  <item nodeId="node-0x4cd860">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc75e5a0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc75e5a0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Dead End
+There is a hurt runner stretching on the curb. He looks like he needs help.
+
+The car wreckage is North. The forest is South.
+
+You can see Hurt Runner here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xb27f3b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb27f3b0">
+    <command xml:space="preserve">give runner water</command>
+    <result xml:space="preserve">You hand the water bottle to the hurt runner and he immidiatly drinks it.
+
+&quot;Thanks for the water man, my cramping is finally going away. Here is a mysterious coin, you deserve it!&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xb2b2de0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb2b2de0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a mysterious coin
+  a bumper
+  a tire
+  a tail light
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc771e40" />
+    </children>
+  </item>
+  <item nodeId="node-0xc771e40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xb28d530" />
+    </children>
+  </item>
+  <item nodeId="node-0xb28d530">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Bathrooms
+A ordinary public bathroom. There is graffiti on the walls, an overflowing rubbish can, and no toilet paper.
+
+Car wreckage is South. The Convenience Store is North.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xb27d8e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb27d8e0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Car Wreckage
+Your car is a total wreck, you need to fix it ASAP.
+
+Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xb283ec0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb283ec0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Cigarette Vending Machine
+An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East.
+
+You can see the cigarette machine here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc7b4f90" />
+    </children>
+  </item>
+  <item nodeId="node-0xc7b4f90">
+    <command xml:space="preserve">x machine</command>
+    <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
+
+Engine - mysterious coin
+
+Bumper - silver coin
+
+Tail light - bronze coin
+
+Tire - copper coin
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc781e20" />
+    </children>
+  </item>
+  <item nodeId="node-0xc781e20">
+    <command xml:space="preserve">buy engine</command>
+    <result xml:space="preserve">The machine rattles and drops an engine with a large thud. You reach in and grab it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xb2a0b70" />
+    </children>
+  </item>
+  <item nodeId="node-0xb2a0b70">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  an engine
+  a bumper
+  a tire
+  a tail light
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc77bd30" />
+    </children>
+  </item>
+  <item nodeId="node-0xc77bd30">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Car Repair Shop
+A poor lit garage gives you the impression that buisness is slow. The walls are baren and there there is nothing much here. You wonder if this is even the right place. There is a man named Jack sitting down behind a desk.
+
+
+The cigarette vending machine is West.
+
+You can see Jack here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc78a2e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc78a2e0">
+    <command xml:space="preserve">give jack bumper</command>
+    <result xml:space="preserve">You give the bumper to Jack and he smiles.
+
+&quot;Good, this will definetly work. Just need a few more part until your car looks new again!&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xb2ba180" />
+    </children>
+  </item>
+  <item nodeId="node-0xb2ba180">
+    <command xml:space="preserve">give jack engine</command>
+    <result xml:space="preserve">You give the engine to Jack and his eyes light up.
+
+&quot;Wow, this will definetly work. Just need a few more part until your car looks new again!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc7b44f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc7b44f0">
+    <command xml:space="preserve">give jack tire</command>
+    <result xml:space="preserve">You give the tire to Jack and gives you a pat on the back.
+
+&quot;Great job, this will do. Just need a few more part until your car looks new again!&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0xc763260" />
+    </children>
+  </item>
+  <item nodeId="node-0xc763260">
+    <command xml:space="preserve">give jack light</command>
+    <result xml:space="preserve">You give the tail light to Jack and gives you a thumbs up.
+
+&quot;Excellent, this will do just fine. Just need a few more part until your car looks new again!&quot;
+
+
+
+    *** You hand the last part to Jack and he quickly fixes your car. Your car almost looks like new again! You thank him and get into your car. Feeling so relieved, you drive home at last. YOU WIN! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="127">YES</temporary>
+  </item>
+  <item nodeId="node-0x6885910">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Car Repair Shop
@@ -211,10 +1546,10 @@ You can see Jack here.
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0xf4fbfb0" />
+      <child nodeId="node-0x6885980" />
     </children>
   </item>
-  <item nodeId="node-0xf4fbfb0">
+  <item nodeId="node-0x6885980">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -223,10 +1558,10 @@ You can see Jack here.
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0xf4a4d00" />
+      <child nodeId="node-0x68859f0" />
     </children>
   </item>
-  <item nodeId="node-0xf4a4d00">
+  <item nodeId="node-0x68859f0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Cigarette Vending Machine
@@ -239,10 +1574,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0xbca48a0" />
+      <child nodeId="node-0x6885a60" />
     </children>
   </item>
-  <item nodeId="node-0xbca48a0">
+  <item nodeId="node-0x6885a60">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Car Wreckage
@@ -255,10 +1590,10 @@ Bathrooms are north. The roadside is West. The cigarette vending machine is East
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0x1e6f90" />
+      <child nodeId="node-0x6885ad0" />
     </children>
   </item>
-  <item nodeId="node-0x1e6f90">
+  <item nodeId="node-0x6885ad0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Roadside
@@ -271,10 +1606,10 @@ The car wreckage is East.
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0xbca89f0" />
+      <child nodeId="node-0x6885b40" />
     </children>
   </item>
-  <item nodeId="node-0xbca89f0">
+  <item nodeId="node-0x6885b40">
     <command xml:space="preserve">x trash</command>
     <result xml:space="preserve">You see a smashed soda can, a gum wrapper and a copper coin.
 
@@ -283,10 +1618,10 @@ The car wreckage is East.
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0xf4905d0" />
+      <child nodeId="node-0x68857e0" />
     </children>
   </item>
-  <item nodeId="node-0xf4905d0">
+  <item nodeId="node-0x68857e0">
     <command xml:space="preserve">take copper</command>
     <result xml:space="preserve">Taken.
 
@@ -295,10 +1630,10 @@ The car wreckage is East.
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0xbcb6a40" />
+      <child nodeId="node-0x6885830" />
     </children>
   </item>
-  <item nodeId="node-0xbcb6a40">
+  <item nodeId="node-0x6885830">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Car Wreckage
@@ -311,10 +1646,10 @@ Bathrooms are north. The roadside is West. The cigarette vending machine is East
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0xbca2170" />
+      <child nodeId="node-0x6885d30" />
     </children>
   </item>
-  <item nodeId="node-0xbca2170">
+  <item nodeId="node-0x6885d30">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Cigarette Vending Machine
@@ -327,10 +1662,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0xf482170" />
+      <child nodeId="node-0x6885da0" />
     </children>
   </item>
-  <item nodeId="node-0xf482170">
+  <item nodeId="node-0x6885da0">
     <command xml:space="preserve">x machine</command>
     <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
 
@@ -347,10 +1682,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0x6914930" />
+      <child nodeId="node-0x6885e10" />
     </children>
   </item>
-  <item nodeId="node-0x6914930">
+  <item nodeId="node-0x6885e10">
     <command xml:space="preserve">buy tire</command>
     <result xml:space="preserve">You don&apos;t have enough money.
 
@@ -359,10 +1694,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0x69e3df0" />
+      <child nodeId="node-0x6885e80" />
     </children>
   </item>
-  <item nodeId="node-0x69e3df0">
+  <item nodeId="node-0x6885e80">
     <command xml:space="preserve">give copper to machine</command>
     <result xml:space="preserve">The machine rattles and drops a tire with a large thud. You reach in and grab it.
 
@@ -371,7 +1706,7 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="111">YES</temporary>
   </item>
-  <item nodeId="node-0xf4c43c0">
+  <item nodeId="node-0x6885ef0">
     <command xml:space="preserve">buy eninge</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -380,10 +1715,10 @@ Tire - copper coin
     <changed>NO</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4430" />
+      <child nodeId="node-0x6885f60" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4430">
+  <item nodeId="node-0x6885f60">
     <command xml:space="preserve">buy tire</command>
     <result xml:space="preserve">You don&apos;t have enough money.
 
@@ -392,10 +1727,10 @@ Tire - copper coin
     <changed>NO</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c44a0" />
+      <child nodeId="node-0x6885fd0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c44a0">
+  <item nodeId="node-0x6885fd0">
     <command xml:space="preserve">buy tail light</command>
     <result xml:space="preserve">You don&apos;t have enough money.
 
@@ -404,10 +1739,10 @@ Tire - copper coin
     <changed>NO</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4510" />
+      <child nodeId="node-0x6886040" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4510">
+  <item nodeId="node-0x6886040">
     <command xml:space="preserve">buy tire</command>
     <result xml:space="preserve">You don&apos;t have enough money.
 
@@ -416,10 +1751,10 @@ Tire - copper coin
     <changed>NO</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4580" />
+      <child nodeId="node-0x68860b0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4580">
+  <item nodeId="node-0x68860b0">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a bronze coin
@@ -429,10 +1764,10 @@ Tire - copper coin
     <changed>NO</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c45f0" />
+      <child nodeId="node-0x6886120" />
     </children>
   </item>
-  <item nodeId="node-0xf4c45f0">
+  <item nodeId="node-0x6886120">
     <command xml:space="preserve">buy tail lgiht</command>
     <result xml:space="preserve">I only understood you as far as wanting to buy the tail light.
 
@@ -441,10 +1776,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4660" />
+      <child nodeId="node-0x6886190" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4660">
+  <item nodeId="node-0x6886190">
     <command xml:space="preserve">buy tail light</command>
     <result xml:space="preserve">You don&apos;t have enough money.
 
@@ -453,10 +1788,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c46d0" />
+      <child nodeId="node-0x6885bb0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c46d0">
+  <item nodeId="node-0x6885bb0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Car Repair Shop
@@ -472,10 +1807,10 @@ You can see Jack here.
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4740" />
+      <child nodeId="node-0x6885c20" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4740">
+  <item nodeId="node-0x6885c20">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Cigarette Vending Machine
@@ -488,10 +1823,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c47b0" />
+      <child nodeId="node-0x6885c90" />
     </children>
   </item>
-  <item nodeId="node-0xf4c47b0">
+  <item nodeId="node-0x6885c90">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Car Wreckage
@@ -504,10 +1839,10 @@ Bathrooms are north. The roadside is West. The cigarette vending machine is East
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4820" />
+      <child nodeId="node-0x6886440" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4820">
+  <item nodeId="node-0x6886440">
     <command xml:space="preserve">x trash</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -516,10 +1851,10 @@ Bathrooms are north. The roadside is West. The cigarette vending machine is East
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4240" />
+      <child nodeId="node-0x68864b0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4240">
+  <item nodeId="node-0x68864b0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Roadside
@@ -532,10 +1867,10 @@ The car wreckage is East.
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c42b0" />
+      <child nodeId="node-0x6886520" />
     </children>
   </item>
-  <item nodeId="node-0xf4c42b0">
+  <item nodeId="node-0x6886520">
     <command xml:space="preserve">x trash</command>
     <result xml:space="preserve">You see a smashed soda can, a gum wrapper and a copper coin.
 
@@ -544,10 +1879,10 @@ The car wreckage is East.
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4320" />
+      <child nodeId="node-0x6886590" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4320">
+  <item nodeId="node-0x6886590">
     <command xml:space="preserve">take copper</command>
     <result xml:space="preserve">Taken.
 
@@ -556,10 +1891,10 @@ The car wreckage is East.
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4ad0" />
+      <child nodeId="node-0x6886600" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4ad0">
+  <item nodeId="node-0x6886600">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Car Wreckage
@@ -572,10 +1907,10 @@ Bathrooms are north. The roadside is West. The cigarette vending machine is East
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4b40" />
+      <child nodeId="node-0x6886670" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4b40">
+  <item nodeId="node-0x6886670">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Cigarette Vending Machine
@@ -588,10 +1923,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4bb0" />
+      <child nodeId="node-0x68866e0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4bb0">
+  <item nodeId="node-0x68866e0">
     <command xml:space="preserve">buy tire</command>
     <result xml:space="preserve">You don&apos;t have enough money.
 
@@ -600,10 +1935,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4c20" />
+      <child nodeId="node-0x6886750" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4c20">
+  <item nodeId="node-0x6886750">
     <command xml:space="preserve">buy engine</command>
     <result xml:space="preserve">You don&apos;t have enough money.
 
@@ -612,16 +1947,16 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c4c90" />
+      <child nodeId="node-0x68867c0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c4c90">
+  <item nodeId="node-0x68867c0">
     <command xml:space="preserve">buy tail light</command>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="81">YES</temporary>
   </item>
-  <item nodeId="node-0xf4c5400">
+  <item nodeId="node-0x6886830">
     <command xml:space="preserve">hi</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -630,10 +1965,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c5470" />
+      <child nodeId="node-0x68868a0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c5470">
+  <item nodeId="node-0x68868a0">
     <command xml:space="preserve">Silver Coin</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -642,10 +1977,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c54e0" />
+      <child nodeId="node-0x6886910" />
     </children>
   </item>
-  <item nodeId="node-0xf4c54e0">
+  <item nodeId="node-0x6886910">
     <command xml:space="preserve">bumper</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -654,10 +1989,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c5550" />
+      <child nodeId="node-0x6886980" />
     </children>
   </item>
-  <item nodeId="node-0xf4c5550">
+  <item nodeId="node-0x6886980">
     <command xml:space="preserve">What&apos;s in the machine?</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -666,10 +2001,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c55c0" />
+      <child nodeId="node-0x68869f0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c55c0">
+  <item nodeId="node-0x68869f0">
     <command xml:space="preserve">examine machine</command>
     <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
 
@@ -686,10 +2021,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c5630" />
+      <child nodeId="node-0x6886a60" />
     </children>
   </item>
-  <item nodeId="node-0xf4c5630">
+  <item nodeId="node-0x6886a60">
     <command xml:space="preserve">Engine</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -698,10 +2033,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c56a0" />
+      <child nodeId="node-0x6886ad0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c56a0">
+  <item nodeId="node-0x6886ad0">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a bronze coin
@@ -711,10 +2046,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c5710" />
+      <child nodeId="node-0x6886b40" />
     </children>
   </item>
-  <item nodeId="node-0xf4c5710">
+  <item nodeId="node-0x6886b40">
     <command xml:space="preserve">Bronze coin</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -723,10 +2058,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c5780" />
+      <child nodeId="node-0x6886200" />
     </children>
   </item>
-  <item nodeId="node-0xf4c5780">
+  <item nodeId="node-0x6886200">
     <command xml:space="preserve">a bronze coin</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -735,10 +2070,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c57f0" />
+      <child nodeId="node-0x6886270" />
     </children>
   </item>
-  <item nodeId="node-0xf4c57f0">
+  <item nodeId="node-0x6886270">
     <command xml:space="preserve">tail light</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -747,10 +2082,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c5860" />
+      <child nodeId="node-0x68862e0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c5860">
+  <item nodeId="node-0x68862e0">
     <command xml:space="preserve">give you bronze coin</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -759,10 +2094,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c58d0" />
+      <child nodeId="node-0x6886350" />
     </children>
   </item>
-  <item nodeId="node-0xf4c58d0">
+  <item nodeId="node-0x6886350">
     <command xml:space="preserve">plug in bronze coin</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -771,10 +2106,10 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c5940" />
+      <child nodeId="node-0x68863c0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c5940">
+  <item nodeId="node-0x68863c0">
     <command xml:space="preserve">give coin to machine</command>
     <result xml:space="preserve">The machine rattles and drops a tail light with a large thud. You reach in and grab it.
 
@@ -783,780 +2118,7 @@ Tire - copper coin
     <changed>YES</changed>
     <temporary score="89">YES</temporary>
   </item>
-  <item nodeId="node-0xf4c5a90">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Roadside
-The roadside is deserted except for some trash on the side of the curb. There is a old street light next to you.
-
-The car wreckage is East.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="168">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c6f90" />
-      <child nodeId="node-0x29e4b0" />
-      <child nodeId="node-0xf4c5b00" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c5b00">
-    <command xml:space="preserve">x trash</command>
-    <result xml:space="preserve">You see a smashed soda can, a gum wrapper and a copper coin.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="168">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c65f0" />
-      <child nodeId="node-0xf4c6350" />
-      <child nodeId="node-0xf4c5ef0" />
-      <child nodeId="node-0xf4c5b70" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c5b70">
-    <command xml:space="preserve">take copper coin</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="116">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c5be0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c5be0">
-    <command xml:space="preserve">take silver coin</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="116">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c5c50" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c5c50">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Car Wreckage
-_____________ Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="116">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c5cc0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c5cc0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Cigarette Vending Machine
-__________________ The car wreckage is West. The car repair shop is East.
-
-You can see the cigarette machine here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="116">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c5d30" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c5d30">
-    <command xml:space="preserve">buy bumper</command>
-    <result xml:space="preserve">The machine rattles and drops a tire with a large thud. You reach in and grab it.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="116">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c5da0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c5da0">
-    <command xml:space="preserve">x machine</command>
-    <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
-
-Engine - mysterious coin
-
-Bumper - silver coin
-
-Tail light - bronze coin
-
-Tire - copper coin
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="116">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c5e10" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c5e10">
-    <command xml:space="preserve">buy tire</command>
-    <result xml:space="preserve">You don&apos;t have enough money.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="116">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c5e80" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c5e80">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  a tire
-  silver coin
-  a bronze coin
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="115">YES</temporary>
-  </item>
-  <item nodeId="node-0xf4c5ef0">
-    <command xml:space="preserve">take all</command>
-    <result xml:space="preserve">(the bronze coin)
-You already have that.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="106">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c5f60" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c5f60">
-    <command xml:space="preserve">take coin</command>
-    <result xml:space="preserve">(the bronze coin)
-You already have that.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="106">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c5fd0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c5fd0">
-    <command xml:space="preserve">take copper coin</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="106">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c6040" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c6040">
-    <command xml:space="preserve">take silver coin</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="106">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c60b0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c60b0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Car Wreckage
-_____________ Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="106">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c6120" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c6120">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Cigarette Vending Machine
-__________________ The car wreckage is West. The car repair shop is East.
-
-You can see the cigarette machine here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="106">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c6190" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c6190">
-    <command xml:space="preserve">x it</command>
-    <result xml:space="preserve">A rusty copper coin. You can&apos;t see anything unusual about it.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="106">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c6200" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c6200">
-    <command xml:space="preserve">x machine</command>
-    <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
-
-Engine - mysterious coin
-
-Bumper - silver coin
-
-Tail light - bronze coin
-
-Tire - copper coin
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="106">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c6270" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c6270">
-    <command xml:space="preserve">buy tire</command>
-    <result xml:space="preserve">The machine rattles and drops a tire with a large thud. You reach in and grab it.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="106">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c62e0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c62e0">
-    <command xml:space="preserve">buy bumper</command>
-    <result xml:space="preserve">You don&apos;t have enough money.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="105">YES</temporary>
-  </item>
-  <item nodeId="node-0xf4c6350">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Car Wreckage
-_____________ Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="58">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c63c0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c63c0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Cigarette Vending Machine
-__________________ The car wreckage is West. The car repair shop is East.
-
-You can see the cigarette machine here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="58">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c6430" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c6430">
-    <command xml:space="preserve">x machine</command>
-    <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
-
-Engine - mysterious coin
-
-Bumper - silver coin
-
-Tail light - bronze coin
-
-Tire - copper coin
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="58">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c64a0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c64a0">
-    <command xml:space="preserve">buy light</command>
-    <result xml:space="preserve">You don&apos;t have enough money.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="58">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c6510" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c6510">
-    <command xml:space="preserve">buy tire</command>
-    <result xml:space="preserve">You don&apos;t have enough money.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="58">YES</temporary>
-  </item>
-  <item nodeId="node-0xf4c65f0">
-    <command xml:space="preserve">take copper</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="168">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4e47c0" />
-      <child nodeId="node-0x69dad90" />
-    </children>
-  </item>
-  <item nodeId="node-0x69dad90">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  Copper coin
-  a bronze coin
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="136">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c0f30" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c0f30">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Car Wreckage
-Your car is a total wreck, you need to fix it ASAP.
-
-Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="136">YES</temporary>
-    <children>
-      <child nodeId="node-0xf473f00" />
-    </children>
-  </item>
-  <item nodeId="node-0xf473f00">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Cigarette Vending Machine
-An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East.
-
-You can see the cigarette machine here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="136">YES</temporary>
-    <children>
-      <child nodeId="node-0x44f760" />
-    </children>
-  </item>
-  <item nodeId="node-0x44f760">
-    <command xml:space="preserve">buy tire</command>
-    <result xml:space="preserve">(to the cigarette machine)
-(first taking the tire)
-That seems to belong to the cigarette machine.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="135">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4ee750" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4ee750">
-    <command xml:space="preserve">buy tail light</command>
-    <result xml:space="preserve">(to the cigarette machine)
-(first taking the tail light)
-That seems to belong to the cigarette machine.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="96">YES</temporary>
-  </item>
-  <item nodeId="node-0xf4e47c0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Car Wreckage
-Your car is a total wreck, you need to fix it ASAP.
-
-Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="168">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4db9a0" />
-      <child nodeId="node-0x14e89fa0" />
-    </children>
-  </item>
-  <item nodeId="node-0x14e89fa0">
-    <command xml:space="preserve">x machine</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="161">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4ea3d0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4ea3d0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Cigarette Vending Machine
-An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East.
-
-You can see the cigarette machine here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="161">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4da810" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4da810">
-    <command xml:space="preserve">x machine</command>
-    <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
-
-Engine - mysterious coin
-
-Bumper - silver coin
-
-Tail light - bronze coin
-
-Tire - copper coin
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="161">YES</temporary>
-    <children>
-      <child nodeId="node-0x14e99010" />
-    </children>
-  </item>
-  <item nodeId="node-0x14e99010">
-    <command xml:space="preserve">buy tire</command>
-    <result xml:space="preserve">Nothing is on sale.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="160">YES</temporary>
-  </item>
-  <item nodeId="node-0xf4db9a0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Cigarette Vending Machine
-An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East.
-
-You can see the cigarette machine here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="168">YES</temporary>
-    <children>
-      <child nodeId="node-0x14e96760" />
-    </children>
-  </item>
-  <item nodeId="node-0x14e96760">
-    <command xml:space="preserve">buy tire</command>
-    <result xml:space="preserve">The machine rattles and drops a tire with a large thud. You reach in and grab it.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="168">YES</temporary>
-    <children>
-      <child nodeId="node-0xf455e70" />
-    </children>
-  </item>
-  <item nodeId="node-0xf455e70">
-    <command xml:space="preserve">buy tail light</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="167">YES</temporary>
-  </item>
-  <item nodeId="node-0x29e4b0">
-    <command xml:space="preserve"> trash</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="153">YES</temporary>
-    <children>
-      <child nodeId="node-0xbc5dbc0" />
-    </children>
-  </item>
-  <item nodeId="node-0xbc5dbc0">
-    <command xml:space="preserve">x trash</command>
-    <result xml:space="preserve">You see a smashed soda can, a gum wrapper and a copper coin.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="153">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4b8610" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4b8610">
-    <command xml:space="preserve">take copper</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="153">YES</temporary>
-    <children>
-      <child nodeId="node-0x14e5bb10" />
-    </children>
-  </item>
-  <item nodeId="node-0x14e5bb10">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Car Wreckage
-Your car is a total wreck, you need to fix it ASAP.
-
-Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="153">YES</temporary>
-    <children>
-      <child nodeId="node-0x219e10" />
-    </children>
-  </item>
-  <item nodeId="node-0x219e10">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Cigarette Vending Machine
-An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East.
-
-You can see the cigarette machine here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="153">YES</temporary>
-    <children>
-      <child nodeId="node-0xf44e850" />
-    </children>
-  </item>
-  <item nodeId="node-0xf44e850">
-    <command xml:space="preserve">x machine</command>
-    <result xml:space="preserve">An old vending machine filled with many car parts. There is a sign on the machine.
-
-Engine - mysterious coin
-
-Bumper - silver coin
-
-Tail light - bronze coin
-
-Tire - copper coin
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="153">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4e1860" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4e1860">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  Copper coin
-  a bronze coin
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="153">YES</temporary>
-    <children>
-      <child nodeId="node-0x1505f9a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1505f9a0">
-    <command xml:space="preserve">buy tail light</command>
-    <result xml:space="preserve">The machine rattles and drops a tail light with a large thud. You reach in and grab it.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="153">YES</temporary>
-    <children>
-      <child nodeId="node-0xf41fcb0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf41fcb0">
-    <command xml:space="preserve">buy tire</command>
-    <result xml:space="preserve">Nothing is on sale.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="152">YES</temporary>
-  </item>
-  <item nodeId="node-0xf4c6f90">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="126">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c7000" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c7000">
-    <command xml:space="preserve">x trash</command>
-    <result xml:space="preserve">You see a smashed soda can, a gum wrapper and a copper coin.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="126">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c7070" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c7070">
-    <command xml:space="preserve">take copper coin</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="126">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c70e0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c70e0">
-    <command xml:space="preserve">take silver coin</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="126">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c7150" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c7150">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Car Wreckage
-_____________ Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="126">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c71c0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c71c0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Cigarette Vending Machine
-__________________ The car wreckage is West. The car repair shop is East.
-
-You can see the cigarette machine here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="126">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c7230" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c7230">
-    <command xml:space="preserve">buy bumper</command>
-    <result xml:space="preserve">The machine rattles and drops a tire with a large thud. You reach in and grab it.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="126">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c72a0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c72a0">
-    <command xml:space="preserve">buy tire</command>
-    <result xml:space="preserve">You don&apos;t have enough money.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="126">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c7310" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c7310">
-    <command xml:space="preserve">buy tire with coin</command>
-    <result xml:space="preserve">I only understood you as far as wanting to buy the tire.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="125">YES</temporary>
-  </item>
-  <item nodeId="node-0xf4c77e0">
+  <item nodeId="node-0x6888270">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1565,10 +2127,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="74">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c7850" />
+      <child nodeId="node-0x68882e0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c7850">
+  <item nodeId="node-0x68882e0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1577,10 +2139,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="74">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c78c0" />
+      <child nodeId="node-0x6888350" />
     </children>
   </item>
-  <item nodeId="node-0xf4c78c0">
+  <item nodeId="node-0x6888350">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1589,10 +2151,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="74">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c7930" />
+      <child nodeId="node-0x68883c0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c7930">
+  <item nodeId="node-0x68883c0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1601,10 +2163,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="74">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c79a0" />
+      <child nodeId="node-0x6888430" />
     </children>
   </item>
-  <item nodeId="node-0xf4c79a0">
+  <item nodeId="node-0x6888430">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1613,10 +2175,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="74">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c7a10" />
+      <child nodeId="node-0x68884a0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c7a10">
+  <item nodeId="node-0x68884a0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1625,10 +2187,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="74">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c7a80" />
+      <child nodeId="node-0x6888510" />
     </children>
   </item>
-  <item nodeId="node-0xf4c7a80">
+  <item nodeId="node-0x6888510">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1637,10 +2199,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="74">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c7af0" />
+      <child nodeId="node-0x6888580" />
     </children>
   </item>
-  <item nodeId="node-0xf4c7af0">
+  <item nodeId="node-0x6888580">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1649,10 +2211,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="74">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c7b60" />
+      <child nodeId="node-0x68885f0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c7b60">
+  <item nodeId="node-0x68885f0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1661,10 +2223,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="74">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c7bd0" />
+      <child nodeId="node-0x6888660" />
     </children>
   </item>
-  <item nodeId="node-0xf4c7bd0">
+  <item nodeId="node-0x6888660">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1673,10 +2235,10 @@ You can see the cigarette machine here.
     <changed>YES</changed>
     <temporary score="74">YES</temporary>
     <children>
-      <child nodeId="node-0xf4c7c40" />
+      <child nodeId="node-0x68886d0" />
     </children>
   </item>
-  <item nodeId="node-0xf4c7c40">
+  <item nodeId="node-0x68886d0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1684,17 +2246,5 @@ You can see the cigarette machine here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="74">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4c7cb0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4c7cb0">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="73">YES</temporary>
   </item>
 </Skein>
