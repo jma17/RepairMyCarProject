@@ -243,4 +243,28 @@ Rule for deciding whether all includes something: it does not.
 Rule for printing a parser error when the latest parser error is the nothing to do error: say "No cheating" instead.
 
 
+[west
+x trash
+take copper coin
+north
+x graffiti
+x toilet
+north
+ask cashier about water
+south
+south
+south
+ask runner about leg
+give runner water
+north
+east
+buy engine
+buy bumper
+buy tail light
+buy tire
+east
+give Jack engine
+give Jack bumper
+give Jack tail light
+give Jack tire]
 
