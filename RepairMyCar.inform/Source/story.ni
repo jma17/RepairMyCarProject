@@ -2,6 +2,16 @@
 "RepairMyCar" by Jaryd Ma
  
 
+The release number is 1.
+The story creation year is 2014.
+The story headline is "A Car Fixing Tale".
+The story genre is "Adventure".
+The story description is "A fun car fixing adventure. Can you, as the player fix your wrecked car and get home safely?
+Cover Art by dreamstime.com".
+
+
+
+
 Release along with cover art ("Wrecked Car.")
 
 [jon nakagawa helped me with the hints code]
@@ -225,7 +235,10 @@ Instead of buying the tail light:
 	if the player has the bronze coin, try giving the bronze coin to the cigarette machine;
 	otherwise say "You don't have enough money."
 
-
+[this code is from a day for spelling]
+Instead of attacking someone:
+say "You smack him right in the face and he starts to cry. He calls 911 and you go to jail. Violence is not the answer.";
+end the story finally saying "You loose."
 
 [Mr. Kiang helped me get this code]
 Every turn rule:
