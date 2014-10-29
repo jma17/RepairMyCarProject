@@ -14,7 +14,7 @@ Cover Art by dreamstime.com".
 
 Release along with cover art ("Wrecked Car.")
 
-[jon nakagawa helped me with the hints code]
+[Jon Nakagawa helped me with the hints code]
 Casting hint is an action applying to nothing.
 
 Understand "hint" as casting hint.
@@ -47,8 +47,8 @@ Toilet is a thing in the bathrooms. It is undescribed. It is scenery. The descri
 
 It's a silver coin!" 
 
-[cole helped me with this code]
-Instead of examining toilet: say "Something is clogging the toilet, you look closer and see something shiney. You reluctantly reach in and grab it. 
+[Cole helped me with this code]
+Instead of examining toilet: say "Something is clogging the toilet, you look closer and see something shiny. You reluctantly reach in and grab it. 
 
 It's a silver coin!"; move silver coin to player.
 
@@ -59,8 +59,8 @@ Graffiti is a thing in the bathrooms. It is undescribed. It is scenery. The desc
 
 Convenience Store is a room. " An air conditioned store with bright lights. There is a cashier at the front. Bathrooms are South."
 
-[got this code from a day for spellling]
-In Convenience Store is a male person called Cashier. The description of Cashier is "A fake smile and a red apron verifies that he is the cashier. His arpon says 'I AM HERE TO HELP YOU!'"
+[got this code from a day for spelling]
+In Convenience Store is a male person called Cashier. The description of Cashier is "A fake smile and a red apron verifies that he is the cashier. His apron says 'I AM HERE TO HELP YOU!'"
 
 instead of asking the Cashier about "water": say "Sure, we got some. Since you are the 100th costumer today, I will give it to you for free! Congratulations!"; move water bottle to player.
 
@@ -71,7 +71,7 @@ Water bottle is a thing in the convenience store. It is undescribed. The descrip
 
 Convenience Store is north of Bathrooms.
 
-Car Repair Shop is a room. "A poor lit garage gives you the impression that buisness is slow. The walls are baren and there there is nothing much here. You wonder if this is even the right place. There is a man named Jack sitting down behind a desk. 
+Car Repair Shop is a room. "A poorly lit garage gives you the impression that business is slow. The walls are barren and there is nothing much here. You wonder if this is even the right place. There is a man named Jack sitting down behind a desk. 
 
 
 The cigarette vending machine is West."
@@ -85,7 +85,9 @@ desk is a thing in the Car repair shop. It is undescribed. It is scenery. The de
 In Car Repair Shop is a male person called Jack. The description of Jack is "A tired looking man with a wizard like beard. He is wearing a t-shirt and jeans."
 
 [I didn't want to use a table of responses because Jon said not to. Instead, I did it all manually]
-instead of asking the Jack about "car": say "Your car needs fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts,  I will fix your car up."
+instead of asking the Jack about "car": say "Your car needs fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts, I will fix your car up."
+
+instead of asking the Jack about "car parts": say "Your car needs fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts, I will fix your car up. You can get the car parts from the old vending machine just outside."
 
 instead of asking the Jack about "broken car": say "Your car need fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts,  I will fix your car up."
 
@@ -95,21 +97,43 @@ instead of asking the Jack about "repairing car": say "Your car need fixing? Wel
 
 instead of asking the Jack about "car repair": say "Your car need fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts,  I will fix your car up."
 
+Instead of asking the cashier about "store": say "This store sells just about anything. If you want water, food, or clothes, you've come to the right place."
+
+Instead of giving the bronze coin to Hurt Runner: say "Sorry, I don't drink coins. I drink water.". 
+
+Instead of giving the mysterious coin to Hurt Runner: say "Sorry, I don't drink coins. I drink water.". 
+
+Instead of giving the copper coin to Hurt Runner: say "Sorry, I don't drink coins. I drink water.". 
+
+Instead of giving the silver coin to Hurt Runner: say "Sorry, I don't drink coins. I drink water.". 
+
+Instead of giving the soda can to Hurt Runner: say "It's kind of empty if you didn't notice!". 
+
+Instead of giving the wrapper to Hurt Runner: say "Thanks for the wrapper man, I can totally drink it.". 
+
+Instead of giving the bronze coin to Jack: say "Not me, the vending machine man! Do I look like a vending machine to you?". 
+
+Instead of giving the copper coin to Jack: say "Not me, the vending machine man! Do I look like a vending machine to you?".
+
+Instead of giving the mysterious coin to Jack: say "Not me, the vending machine man! Do I look like a vending machine to you?".
+
+Instead of giving the silver coin to Jack: say "Not me, the vending machine man! Do I look like a vending machine to you?".
+
 Instead of giving the engine to Jack: say "You give the engine to Jack and his eyes light up. 
 
-'Wow, this will definetly work. Just need a few more part until your car looks new again!"; move the engine to Jack.
+'Wow, this will definitely work. Just need a few more parts until your car looks new again!"; move the engine to Jack.
 
 Instead of giving the bumper to Jack: say "You give the bumper to Jack and he smiles. 
 
-'Good, this will definetly work. Just need a few more part until your car looks new again!'"; move the bumper to Jack.
+'Good, this will definitely work. Just need a few more parts until your car looks new again!'"; move the bumper to Jack.
 
-Instead of giving the tail light to Jack: say "You give the tail light to Jack and gives you a thumbs up. 
+Instead of giving the tail light to Jack: say "You give the tail light to Jack and he gives you a thumbs up. 
 
-'Excellent, this will do just fine. Just need a few more part until your car looks new again!'"; move the tail light to Jack.
+'Excellent, this will do just fine. Just need a few more parts until your car looks new again!'"; move the tail light to Jack.
 
-Instead of giving the tire to Jack: say "You give the tire to Jack and gives you a pat on the back. 
+Instead of giving the tire to Jack: say "You give the tire to Jack and he gives you a pat on the back. 
 
-'Great job, this will do. Just need a few more part until your car looks new again!'"; move the tire to Jack.
+'Great job, this will do. Just need a few more parts until your car looks new again!'"; move the tire to Jack.
 
 Cigarette Vending Machine is a room. "An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East."
 Cigarette Vending Machine is east of Car Wreckage.
@@ -120,19 +144,19 @@ The car wreckage is North. The forest is South."
 
 A Dead End is south of the Car Wreckage.
 
-Instead of giving the water bottle to Hurt Runner: say "You hand the water bottle to the hurt runner and he immidiatly drinks it. 
+Instead of giving the water bottle to Hurt Runner: say "You hand the water bottle to the hurt runner and he immediately drinks it. 
 
 'Thanks for the water man, my cramping is finally going away. Here is a mysterious coin, you deserve it!'"; remove the water bottle from play; move mysterious coin to player.
 [I got this code from a day for spelling, I didn't want to use a table of responses because Jon said not to. Instead, I did it all manually]
 In Dead End is a male person called Hurt Runner. The description of Hurt Runner is "He looks tired and sweaty, his leg is cramping up."
 
-instead of asking the Hurt Runner about "leg": say "I can't move becuase my leg is cramping hard, do you have any water?"
+instead of asking the Hurt Runner about "leg": say "I can't move because my leg is cramping hard, do you have any water?"
 
 instead of asking the Hurt Runner about "leg cramp": say "I can't move becuase my leg is cramping hard, do you have any water?"
 
-instead of asking the Hurt Runner about "cramp": say "I can't move becuase my leg is cramping hard, do you have any water?"
+instead of asking the Hurt Runner about "cramp": say "I can't move because my leg is cramping hard, do you have any water?"
 
-instead of asking the Hurt Runner about "cramping leg": say "I can't move becuase my leg is cramping hard, do you have any water?"
+instead of asking the Hurt Runner about "cramping leg": say "I can't move because my leg is cramping hard, do you have any water?"
 
 The Forest is a room. "What lies beyond here is a mystery. All you see is tall trees. The dead end is North."
 
@@ -166,7 +190,7 @@ Understand the command "put" as "give"
 
 
 [Mr. Kiang helped me with this. At first he gave me the craving code but I didn't really like it too much so I used this code that I altered from the documentation in inform. Mr. Kiang fixed the bug that didn't let you buy things in the machine.]
-in Cigarette Vending Machine is a male person called the cigarette machine. the description of cigarette machine is "An old vending machine filled with many car parts. There is a sign on the machine.
+in Cigarette Vending Machine is a male person called the cigarette machine. the description of cigarette machine is "An old black vending machine stands alone. Instead of cigarettes however, you can see many odd looking car parts. There is a faded sign taped to the machine that says:
 
 Engine - mysterious coin
 
@@ -182,7 +206,7 @@ Instead of giving the mysterious coin to the cigarette machine:
     now the player carries the engine; 
 remove copper coin from play;
 move engine to player;
-    say "The machine rattles and drops an engine with a large thud. You reach in and grab it."
+    say "You put the mysterious coin in the machine. The machine rattles and drops an engine with a large thud. You reach in and grab it."
 
 Instead of buying the engine:
 	if the player has the mysterious coin, try giving the mysterious coin to the cigarette machine;
@@ -200,7 +224,7 @@ Instead of giving the silver coin to the cigarette machine:
     now the player carries the bumper; 
 remove silver coin from play;
 move bumper to player;
-    say "The machine rattles and drops a bumber with a large thud. You reach in and grab it."
+    say "You put the silver coin in the machine. The machine rattles and drops a bumper with a large thud. You reach in and grab it."
 
 Instead of buying the bumper:
 	if the player has the silver coin, try giving the silver coin to the cigarette machine;
@@ -214,7 +238,7 @@ Instead of giving the copper coin to the cigarette machine:
     now the player carries the tire; 
 remove copper coin from play;
 move tire to player;
-    say "The machine rattles and drops a tire with a large thud. You reach in and grab it."
+    say "You put the copper coin in the machine. The machine rattles and drops a tire with a large thud. You reach in and grab it."
 
 Instead of buying the tire:
 	if the player has the copper coin, try giving the copper coin to the cigarette machine;
@@ -231,7 +255,7 @@ Instead of giving the bronze coin to the cigarette machine:
     now the player carries the tail light; 
 remove bronze coin from play;
 move tail light to player;
-    say "The machine rattles and drops a tail light with a large thud. You reach in and grab it."
+    say "You put the bronze coin in the machine. The machine rattles and drops a tail light with a large thud. You reach in and grab it."
 
 Instead of buying the tail light:
 	if the player has the bronze coin, try giving the bronze coin to the cigarette machine;
