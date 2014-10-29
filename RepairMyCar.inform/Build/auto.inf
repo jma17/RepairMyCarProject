@@ -43,7 +43,7 @@ Global Story = BC_0;
 Constant Headline BC_1;
 Constant Story_Author BC_2;
 Release 1;
-Serial "141025";
+Serial "141028";
 
 Default Story 0;
 Default Headline 0;
@@ -4390,7 +4390,7 @@ Global lightflag = false;
 ! ListWriter.i6t: Memory
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant REQUISITION_STACK_SIZE = 3*45;
+Constant REQUISITION_STACK_SIZE = 3*46;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -10532,14 +10532,14 @@ Constant DirectionObject_9 = I59_down;
 Constant DirectionObject_10 = in_obj;
 Constant DirectionObject_11 = out_obj;
 Array Map_Storage -->
- I126_bathrooms 0 0 I137_dead_end 0 0 I135_cigarette_vending_machi I141_roadside 0 0 0 0 ! Exits from: I124_car_wreckage
+ I126_bathrooms 0 0 I138_dead_end 0 0 I135_cigarette_vending_machi I142_roadside 0 0 0 0 ! Exits from: I124_car_wreckage
  I131_convenience_store 0 0 I124_car_wreckage 0 0 0 0 0 0 0 0 ! Exits from: I126_bathrooms
  0 0 0 I126_bathrooms 0 0 0 0 0 0 0 0 ! Exits from: I131_convenience_store
  0 0 0 0 0 0 0 I135_cigarette_vending_machi 0 0 0 0 ! Exits from: I134_car_repair_shop
  0 0 0 0 0 0 I134_car_repair_shop I124_car_wreckage 0 0 0 0 ! Exits from: I135_cigarette_vending_machi
- I124_car_wreckage 0 0 I139_forest 0 0 0 0 0 0 0 0 ! Exits from: I137_dead_end
- I137_dead_end 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I139_forest
- 0 0 0 0 0 0 I124_car_wreckage 0 0 0 0 0 ! Exits from: I141_roadside
+ I124_car_wreckage 0 0 I140_forest 0 0 0 0 0 0 0 0 ! Exits from: I138_dead_end
+ I138_dead_end 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I140_forest
+ 0 0 0 0 0 0 I124_car_wreckage 0 0 0 0 0 ! Exits from: I142_roadside
 ;
 
 Class VPH_Class;
@@ -10991,7 +10991,7 @@ Object selfobj ""
     with cap_short_name BC_143
     has mark_as_thing
     with IK2_Count 0
-    with IK2_Link I154_bronze_coin
+    with IK2_Link I155_bronze_coin
     with IK8_Count 0
     with IK8_Link I132_cashier
     with KD_Count 8
@@ -11003,7 +11003,7 @@ Object selfobj ""
     with article BC_147
 ;
 
-Object -> I154_bronze_coin ""
+Object -> I155_bronze_coin ""
     class K2_thing
     with short_name BC_148
     has proper
@@ -11011,7 +11011,7 @@ Object -> I154_bronze_coin ""
     with vector 0
     with cap_short_name BC_149
     has mark_as_thing
-    with IK2_Count 23
+    with IK2_Count 24
     with IK2_Link I125_your_car
     with KD_Count 2
     with name 'bronze' 'coin' 'things//p' 
@@ -11177,7 +11177,7 @@ Object -> I132_cashier ""
     with IK2_Count 6
     with IK2_Link I133_water_bottle
     with IK8_Count 1
-    with IK8_Link I136_jack
+    with IK8_Link I137_jack
     with KD_Count 8
     with name 'cashier' 'people//p' 
     with action_bitmap 0 0 0 0 0 
@@ -11197,7 +11197,7 @@ Object -> I133_water_bottle ""
     with cap_short_name BC_210
     has mark_as_thing
     with IK2_Count 7
-    with IK2_Link I136_jack
+    with IK2_Link I136_desk
     with KD_Count 2
     with name 'water' 'bottle' 'things//p' 
     with action_bitmap 0 0 0 0 0 
@@ -11225,21 +11225,21 @@ Object I134_car_repair_shop ""
     with article BC_220
 ;
 
-Object -> I136_jack ""
-    class K8_person
+Object -> I136_desk ""
+    class K2_thing
     with short_name BC_221
     with description BC_222
     has proper
-    has ~female
+    has static
+    has scenery
+    has concealed
     with vector 0
     with cap_short_name BC_223
     has mark_as_thing
     with IK2_Count 8
-    with IK2_Link I147_cigarette_machine
-    with IK8_Count 2
-    with IK8_Link I147_cigarette_machine
-    with KD_Count 8
-    with name 'jack' 'people//p' 
+    with IK2_Link I137_jack
+    with KD_Count 2
+    with name 'desk' 'things//p' 
     with action_bitmap 0 0 0 0 0 
     with initial BC_224
     with list_together BC_225
@@ -11247,195 +11247,217 @@ Object -> I136_jack ""
     with article BC_227
 ;
 
-Object I135_cigarette_vending_machi ""
-    class K1_room
+Object -> I137_jack ""
+    class K8_person
     with short_name BC_228
     with description BC_229
     has proper
+    has ~female
     with vector 0
-    with room_index -1
     with cap_short_name BC_230
-    has mark_as_room
-    with IK1_Count 4
-    with IK1_Link I137_dead_end
-    with KD_Count 1
-    with name 'cigarette' 'vending' 'machine' 'rooms//p' 
-    with list_together BC_231
-    with plural BC_232
-    with article BC_233
+    has mark_as_thing
+    with IK2_Count 9
+    with IK2_Link I148_cigarette_machine
+    with IK8_Count 2
+    with IK8_Link I148_cigarette_machine
+    with KD_Count 8
+    with name 'jack' 'people//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_231
+    with list_together BC_232
+    with plural BC_233
+    with article BC_234
 ;
 
-Object -> I147_cigarette_machine ""
-    class K8_person
-    with short_name BC_234
-    with article BC_235
+Object I135_cigarette_vending_machi ""
+    class K1_room
+    with short_name BC_235
     with description BC_236
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_237
+    has mark_as_room
+    with IK1_Count 4
+    with IK1_Link I138_dead_end
+    with KD_Count 1
+    with name 'cigarette' 'vending' 'machine' 'rooms//p' 
+    with list_together BC_238
+    with plural BC_239
+    with article BC_240
+;
+
+Object -> I148_cigarette_machine ""
+    class K8_person
+    with short_name BC_241
+    with article BC_242
+    with description BC_243
     has ~female
     with vector 0
     has mark_as_thing
-    with IK2_Count 16
-    with IK2_Link I150_engine
+    with IK2_Count 17
+    with IK2_Link I151_engine
     with IK8_Count 4
-    with IK8_Link I138_hurt_runner
+    with IK8_Link I139_hurt_runner
     with KD_Count 8
     with name 'cigarette' 'machine' 'people//p' 
     with action_bitmap 0 0 0 0 0 
-    with initial BC_237
-    with list_together BC_238
-    with plural BC_239
+    with initial BC_244
+    with list_together BC_245
+    with plural BC_246
 ;
 
-Object -> -> I150_engine ""
+Object -> -> I151_engine ""
     class K2_thing
-    with short_name BC_240
-    has ~static
-    with vector 0
-    has mark_as_thing
-    with IK2_Count 19
-    with IK2_Link I151_bumper
-    with KD_Count 2
-    with name 'engine' 'things//p' 
-    with action_bitmap 0 0 0 0 0 
-    with description BC_241
-    with initial BC_242
-    with list_together BC_243
-    with plural BC_244
-    with article BC_245
-;
-
-Object -> -> I151_bumper ""
-    class K2_thing
-    with short_name BC_246
+    with short_name BC_247
     has ~static
     with vector 0
     has mark_as_thing
     with IK2_Count 20
-    with IK2_Link I153_tire
+    with IK2_Link I152_bumper
+    with KD_Count 2
+    with name 'engine' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_248
+    with initial BC_249
+    with list_together BC_250
+    with plural BC_251
+    with article BC_252
+;
+
+Object -> -> I152_bumper ""
+    class K2_thing
+    with short_name BC_253
+    has ~static
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 21
+    with IK2_Link I154_tire
     with KD_Count 2
     with name 'bumper' 'things//p' 
     with action_bitmap 0 0 0 0 0 
-    with description BC_247
-    with initial BC_248
-    with list_together BC_249
-    with plural BC_250
-    with article BC_251
+    with description BC_254
+    with initial BC_255
+    with list_together BC_256
+    with plural BC_257
+    with article BC_258
 ;
 
-Object -> -> I153_tire ""
+Object -> -> I154_tire ""
     class K2_thing
-    with short_name BC_252
+    with short_name BC_259
     has ~static
     with vector 0
     has mark_as_thing
-    with IK2_Count 22
-    with IK2_Link I155_tail_light
+    with IK2_Count 23
+    with IK2_Link I156_tail_light
     with KD_Count 2
     with name 'tire' 'things//p' 
     with action_bitmap 0 0 0 0 0 
-    with description BC_253
-    with initial BC_254
-    with list_together BC_255
-    with plural BC_256
-    with article BC_257
+    with description BC_260
+    with initial BC_261
+    with list_together BC_262
+    with plural BC_263
+    with article BC_264
 ;
 
-Object -> -> I155_tail_light ""
+Object -> -> I156_tail_light ""
     class K2_thing
-    with short_name BC_258
+    with short_name BC_265
     has ~static
     with vector 0
     has mark_as_thing
-    with IK2_Count 24
-    with IK2_Link I138_hurt_runner
+    with IK2_Count 25
+    with IK2_Link I139_hurt_runner
     with KD_Count 2
     with name 'tail' 'light' 'things//p' 
     with action_bitmap 0 0 0 0 0 
-    with description BC_259
-    with initial BC_260
-    with list_together BC_261
-    with plural BC_262
-    with article BC_263
+    with description BC_266
+    with initial BC_267
+    with list_together BC_268
+    with plural BC_269
+    with article BC_270
 ;
 
-Object I137_dead_end ""
+Object I138_dead_end ""
     class K1_room
-    with short_name BC_264
-    with description BC_265
+    with short_name BC_271
+    with description BC_272
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 5
-    with IK1_Link I139_forest
+    with IK1_Link I140_forest
     with KD_Count 1
     with name 'dead' 'end' 'rooms//p' 
-    with list_together BC_266
-    with plural BC_267
-    with article BC_268
-;
-
-Object -> I138_hurt_runner ""
-    class K8_person
-    with short_name BC_269
-    with description BC_270
-    has proper
-    has ~female
-    with vector 0
-    with cap_short_name BC_271
-    has mark_as_thing
-    with IK2_Count 9
-    with IK2_Link I140_tall_trees
-    with IK8_Count 3
-    with IK8_Link I148_if_the_player
-    with KD_Count 8
-    with name 'hurt' 'runner' 'people//p' 
-    with action_bitmap 0 0 0 0 0 
-    with initial BC_272
     with list_together BC_273
     with plural BC_274
     with article BC_275
 ;
 
-Object I139_forest ""
-    class K1_room
+Object -> I139_hurt_runner ""
+    class K8_person
     with short_name BC_276
     with description BC_277
+    has proper
+    has ~female
+    with vector 0
+    with cap_short_name BC_278
+    has mark_as_thing
+    with IK2_Count 10
+    with IK2_Link I141_tall_trees
+    with IK8_Count 3
+    with IK8_Link I149_if_the_player
+    with KD_Count 8
+    with name 'hurt' 'runner' 'people//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_279
+    with list_together BC_280
+    with plural BC_281
+    with article BC_282
+;
+
+Object I140_forest ""
+    class K1_room
+    with short_name BC_283
+    with description BC_284
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 6
-    with IK1_Link I141_roadside
+    with IK1_Link I142_roadside
     with KD_Count 1
     with name 'forest' 'rooms//p' 
-    with list_together BC_278
-    with plural BC_279
-    with article BC_280
-;
-
-Object -> I140_tall_trees ""
-    class K2_thing
-    with short_name BC_281
-    with description BC_282
-    has proper
-    has static
-    has scenery
-    with vector 0
-    with cap_short_name BC_283
-    has mark_as_thing
-    with IK2_Count 10
-    with IK2_Link I142_old_street_light
-    with KD_Count 2
-    with name 'tall' 'trees' 'things//p' 
-    with action_bitmap 0 0 0 0 0 
-    with initial BC_284
     with list_together BC_285
     with plural BC_286
     with article BC_287
 ;
 
-Object I141_roadside ""
-    class K1_room
+Object -> I141_tall_trees ""
+    class K2_thing
     with short_name BC_288
     with description BC_289
+    has proper
+    has static
+    has scenery
+    with vector 0
+    with cap_short_name BC_290
+    has mark_as_thing
+    with IK2_Count 11
+    with IK2_Link I143_old_street_light
+    with KD_Count 2
+    with name 'tall' 'trees' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_291
+    with list_together BC_292
+    with plural BC_293
+    with article BC_294
+;
+
+Object I142_roadside ""
+    class K1_room
+    with short_name BC_295
+    with description BC_296
     with vector 0
     with room_index -1
     has mark_as_room
@@ -11443,47 +11465,25 @@ Object I141_roadside ""
     with IK1_Link nothing
     with KD_Count 1
     with name 'roadside' 'rooms//p' 
-    with list_together BC_290
-    with plural BC_291
-    with article BC_292
-;
-
-Object -> I142_old_street_light ""
-    class K2_thing
-    with short_name BC_293
-    with description BC_294
-    has proper
-    has static
-    has scenery
-    with vector 0
-    with cap_short_name BC_295
-    has mark_as_thing
-    with IK2_Count 11
-    with IK2_Link I143_trash
-    with KD_Count 2
-    with name 'old' 'street' 'light' 'things//p' 
-    with action_bitmap 0 0 0 0 0 
-    with initial BC_296
     with list_together BC_297
     with plural BC_298
     with article BC_299
 ;
 
-Object -> I143_trash ""
+Object -> I143_old_street_light ""
     class K2_thing
     with short_name BC_300
     with description BC_301
     has proper
     has static
     has scenery
-    has concealed
     with vector 0
     with cap_short_name BC_302
     has mark_as_thing
     with IK2_Count 12
-    with IK2_Link I144_copper_coin
+    with IK2_Link I144_trash
     with KD_Count 2
-    with name 'trash' 'things//p' 
+    with name 'old' 'street' 'light' 'things//p' 
     with action_bitmap 0 0 0 0 0 
     with initial BC_303
     with list_together BC_304
@@ -11491,19 +11491,21 @@ Object -> I143_trash ""
     with article BC_306
 ;
 
-Object -> I144_copper_coin ""
+Object -> I144_trash ""
     class K2_thing
     with short_name BC_307
     with description BC_308
     has proper
+    has static
+    has scenery
     has concealed
     with vector 0
     with cap_short_name BC_309
     has mark_as_thing
     with IK2_Count 13
-    with IK2_Link I145_smashed_soda_can
+    with IK2_Link I145_copper_coin
     with KD_Count 2
-    with name 'copper' 'coin' 'things//p' 
+    with name 'trash' 'things//p' 
     with action_bitmap 0 0 0 0 0 
     with initial BC_310
     with list_together BC_311
@@ -11511,7 +11513,7 @@ Object -> I144_copper_coin ""
     with article BC_313
 ;
 
-Object -> I145_smashed_soda_can ""
+Object -> I145_copper_coin ""
     class K2_thing
     with short_name BC_314
     with description BC_315
@@ -11521,9 +11523,9 @@ Object -> I145_smashed_soda_can ""
     with cap_short_name BC_316
     has mark_as_thing
     with IK2_Count 14
-    with IK2_Link I146_gum_wrapper
+    with IK2_Link I146_smashed_soda_can
     with KD_Count 2
-    with name 'smashed' 'soda' 'can' 'things//p' 
+    with name 'copper' 'coin' 'things//p' 
     with action_bitmap 0 0 0 0 0 
     with initial BC_317
     with list_together BC_318
@@ -11531,7 +11533,7 @@ Object -> I145_smashed_soda_can ""
     with article BC_320
 ;
 
-Object -> I146_gum_wrapper ""
+Object -> I146_smashed_soda_can ""
     class K2_thing
     with short_name BC_321
     with description BC_322
@@ -11541,9 +11543,9 @@ Object -> I146_gum_wrapper ""
     with cap_short_name BC_323
     has mark_as_thing
     with IK2_Count 15
-    with IK2_Link I148_if_the_player
+    with IK2_Link I147_gum_wrapper
     with KD_Count 2
-    with name 'gum' 'wrapper' 'things//p' 
+    with name 'smashed' 'soda' 'can' 'things//p' 
     with action_bitmap 0 0 0 0 0 
     with initial BC_324
     with list_together BC_325
@@ -11551,82 +11553,102 @@ Object -> I146_gum_wrapper ""
     with article BC_327
 ;
 
-Object I148_if_the_player ""
-    class K8_person
+Object -> I147_gum_wrapper ""
+    class K2_thing
     with short_name BC_328
+    with description BC_329
     has proper
+    has concealed
     with vector 0
-    with cap_short_name BC_329
+    with cap_short_name BC_330
     has mark_as_thing
-    with IK2_Count 17
-    with IK2_Link I129_silver_coin
-    with IK8_Count 5
-    with IK8_Link nothing
-    with KD_Count 8
-    with name 'if' 'the' 'player' 'people//p' 
+    with IK2_Count 16
+    with IK2_Link I149_if_the_player
+    with KD_Count 2
+    with name 'gum' 'wrapper' 'things//p' 
     with action_bitmap 0 0 0 0 0 
-    with description BC_330
     with initial BC_331
     with list_together BC_332
     with plural BC_333
     with article BC_334
 ;
 
-Object -> I129_silver_coin ""
-    class K2_thing
+Object I149_if_the_player ""
+    class K8_person
     with short_name BC_335
-    with description BC_336
     has proper
-    has ~static
-    has concealed
     with vector 0
-    with cap_short_name BC_337
+    with cap_short_name BC_336
     has mark_as_thing
-    with IK2_Count 4
-    with IK2_Link I149_mysterious_coin
-    with KD_Count 2
-    with name 'silver' 'coin' 'things//p' 
+    with IK2_Count 18
+    with IK2_Link I129_silver_coin
+    with IK8_Count 5
+    with IK8_Link nothing
+    with KD_Count 8
+    with name 'if' 'the' 'player' 'people//p' 
     with action_bitmap 0 0 0 0 0 
+    with description BC_337
     with initial BC_338
     with list_together BC_339
     with plural BC_340
     with article BC_341
 ;
 
-Object -> I149_mysterious_coin ""
+Object -> I129_silver_coin ""
     class K2_thing
     with short_name BC_342
+    with description BC_343
+    has proper
+    has ~static
+    has concealed
+    with vector 0
+    with cap_short_name BC_344
+    has mark_as_thing
+    with IK2_Count 4
+    with IK2_Link I150_mysterious_coin
+    with KD_Count 2
+    with name 'silver' 'coin' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_345
+    with list_together BC_346
+    with plural BC_347
+    with article BC_348
+;
+
+Object -> I150_mysterious_coin ""
+    class K2_thing
+    with short_name BC_349
     has ~static
     with vector 0
     has mark_as_thing
-    with IK2_Count 18
-    with IK2_Link I152_copper_dollar
+    with IK2_Count 19
+    with IK2_Link I153_copper_dollar
     with KD_Count 2
     with name 'mysterious' 'coin' 'things//p' 
     with action_bitmap 0 0 0 0 0 
-    with description BC_343
-    with initial BC_344
-    with list_together BC_345
-    with plural BC_346
-    with article BC_347
+    with description BC_350
+    with initial BC_351
+    with list_together BC_352
+    with plural BC_353
+    with article BC_354
 ;
 
-Object -> I152_copper_dollar ""
+Object -> I153_copper_dollar ""
     class K2_thing
-    with short_name BC_348
+    with short_name BC_355
     has ~static
     with vector 0
     has mark_as_thing
-    with IK2_Count 21
+    with IK2_Count 22
     with IK2_Link nothing
     with KD_Count 2
     with name 'copper' 'dollar' 'things//p' 
     with action_bitmap 0 0 0 0 0 
-    with description BC_349
-    with initial BC_350
-    with list_together BC_351
-    with plural BC_352
-    with article BC_353
+    with description BC_356
+    with initial BC_357
+    with list_together BC_358
+    with plural BC_359
+    with article BC_360
 ;
 
 Constant I70_english_language = 1;
@@ -11680,12 +11702,12 @@ Constant I122_masculine_gender = 2;
 Constant I123_feminine_gender = 3;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
-  (BC_354) ! 25 command prompt
+  (BC_361) ! 25 command prompt
   (I70_english_language) ! 29 language of play
-  (BC_355) ! 32 story author
-  (BC_356) ! 33 story headline
-  (BC_357) ! 34 story genre
-  (BC_358) ! 35 story description
+  (BC_362) ! 32 story author
+  (BC_363) ! 33 story headline
+  (BC_364) ! 34 story genre
+  (BC_365) ! 35 story description
   (1) ! 36 release number
   (2014) ! 37 story creation year
   (0) ! 45 locale paragraph count
@@ -11700,14 +11722,14 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0664 0 (BC_359) (BC_360) (BC_361) (BC_362) (BC_363) ;
+Array tab_0_0 table $0664 0 (BC_366) (BC_367) (BC_368) (BC_369) (BC_370) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
 Array tab_0_2 table $2066 2 (Consult_Grammar_94) (Consult_Grammar_95) (Consult_Grammar_96) (Consult_Grammar_97) (Consult_Grammar_98) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4 ( TABLE_NOVALUE) ( TABLE_NOVALUE) (V27_amusing_a_victorious_pla) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -11717,7 +11739,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $ff $ff $ff $03  ! Column 1
+  $ff $ff $ff $07  ! Column 1
   
   ! End of table
   NULL NULL;
@@ -12450,8 +12472,8 @@ Array ActionHappened --> 0 0 0 0 0;
 ! when play begins:
 [ R_810 ;
     if (debug_rules) DB_Rule(R_810, 810);
-    ! [1: say ~Driving home one night, you fall asleep when you are on the highway. You wake up with a bloody nose and you wonder what just happened. You climb out of your car and see that it is totally wrecked. Luckily you crashed and no one was hurt. You realize that you have to find a repair shop fast because you don't want your parents to know where you are. You reach into the glove compartment for money and all you find is a bronze coin.~]
-    say__p=1;ParaContent(); print "Driving home one night, you fall asleep when you are on the highway. You wake up with a bloody nose and you wonder what just happened. You climb out of your car and see that it is totally wrecked. Luckily you crashed and no one was hurt. You realize that you have to find a repair shop fast because you don't want your parents to know where you are. You reach into the glove compartment for money and all you find is a bronze coin."; new_line; .L_Say1; .L_SayX1;
+    ! [1: say ~Driving home one night, you fall asleep on the highway. You wake up with a bloody nose and you wonder what just happened. You climb out of your car and see that it is totally wrecked. Luckily, no one was hurt in the crash. You realize that you have to find a repair shop fast because you don't want your parents to know where you are. You reach into the glove compartment for money and all you find is a bronze coin.~]
+    say__p=1;ParaContent(); print "Driving home one night, you fall asleep on the highway. You wake up with a bloody nose and you wonder what just happened. You climb out of your car and see that it is totally wrecked. Luckily, no one was hurt in the crash. You realize that you have to find a repair shop fast because you don't want your parents to know where you are. You reach into the glove compartment for money and all you find is a bronze coin."; new_line; .L_Say1; .L_SayX1;
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -12486,15 +12508,15 @@ Array ActionHappened --> 0 0 0 0 0;
 [ R_837 ;
     if (debug_rules) DB_Rule(R_837, 837);
     ! [1: if jack is carrying the tire begin]
-    if (((I136_jack == CarrierOf(I153_tire)))){
+    if (((I137_jack == CarrierOf(I154_tire)))){
         ! [2: if jack is carrying the engine begin]
-        if (((I136_jack == CarrierOf(I150_engine)))){
+        if (((I137_jack == CarrierOf(I151_engine)))){
             ! [3: if jack is carrying the tail light begin]
-            if (((I136_jack == CarrierOf(I155_tail_light)))){
+            if (((I137_jack == CarrierOf(I156_tail_light)))){
                 ! [4: if jack is carrying the bumper begin]
-                if (((I136_jack == CarrierOf(I151_bumper)))){
+                if (((I137_jack == CarrierOf(I152_bumper)))){
                     ! [5: end the story finally saying ~You hand the last part to Jack and he quickly fixes your car. Your car almost looks like new again! You thank him and get into your car. Feeling so relieved, you drive home at last. YOU WIN!~]
-                    deadflag=TX_L_102; story_complete=true;
+                    deadflag=TX_L_105; story_complete=true;
                     ! [6: end if]
                     }
 
@@ -12950,13 +12972,13 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of giving the engine to Jack:
 [ R_819 ;
-    if ((((action ==##Give) &&  (actor==player) && ((noun == I150_engine) && (true)) && ((second == I136_jack) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Give) &&  (actor==player) && ((noun == I151_engine) && (true)) && ((second == I137_jack) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_819, 819);
     ! [1: say ~You give the engine to Jack and his eyes light up.^^'Wow, this will definetly work. Just need a few more part until your car looks new again!~]
     say__p=1;ParaContent(); print "You give the engine to Jack and his eyes light up.^^~Wow, this will definetly work. Just need a few more part until your car looks new again!"; new_line; .L_Say4; .L_SayX4;
     ! [2: move the engine to jack]
-    MoveObject(I150_engine, I136_jack, 0, false);
+    MoveObject(I151_engine, I137_jack, 0, false);
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_819, 819, 'action');
     rfalse;
@@ -12964,13 +12986,13 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of giving the bumper to Jack:
 [ R_820 ;
-    if ((((action ==##Give) &&  (actor==player) && ((noun == I151_bumper) && (true)) && ((second == I136_jack) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Give) &&  (actor==player) && ((noun == I152_bumper) && (true)) && ((second == I137_jack) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_820, 820);
     ! [1: say ~You give the bumper to Jack and he smiles.^^'Good, this will definetly work. Just need a few more part until your car looks new again!'~]
     say__p=1;ParaContent(); print "You give the bumper to Jack and he smiles.^^~Good, this will definetly work. Just need a few more part until your car looks new again!~"; new_line; .L_Say5; .L_SayX5;
     ! [2: move the bumper to jack]
-    MoveObject(I151_bumper, I136_jack, 0, false);
+    MoveObject(I152_bumper, I137_jack, 0, false);
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_820, 820, 'action');
     rfalse;
@@ -12978,13 +13000,13 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of giving the tail light to Jack:
 [ R_821 ;
-    if ((((action ==##Give) &&  (actor==player) && ((noun == I155_tail_light) && (true)) && ((second == I136_jack) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Give) &&  (actor==player) && ((noun == I156_tail_light) && (true)) && ((second == I137_jack) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_821, 821);
     ! [1: say ~You give the tail light to Jack and gives you a thumbs up.^^'Excellent, this will do just fine. Just need a few more part until your car looks new again!'~]
     say__p=1;ParaContent(); print "You give the tail light to Jack and gives you a thumbs up.^^~Excellent, this will do just fine. Just need a few more part until your car looks new again!~"; new_line; .L_Say6; .L_SayX6;
     ! [2: move the tail light to jack]
-    MoveObject(I155_tail_light, I136_jack, 0, false);
+    MoveObject(I156_tail_light, I137_jack, 0, false);
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_821, 821, 'action');
     rfalse;
@@ -12992,13 +13014,13 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of giving the tire to Jack:
 [ R_822 ;
-    if ((((action ==##Give) &&  (actor==player) && ((noun == I153_tire) && (true)) && ((second == I136_jack) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Give) &&  (actor==player) && ((noun == I154_tire) && (true)) && ((second == I137_jack) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_822, 822);
     ! [1: say ~You give the tire to Jack and gives you a pat on the back.^^'Great job, this will do. Just need a few more part until your car looks new again!'~]
     say__p=1;ParaContent(); print "You give the tire to Jack and gives you a pat on the back.^^~Great job, this will do. Just need a few more part until your car looks new again!~"; new_line; .L_Say7; .L_SayX7;
     ! [2: move the tire to jack]
-    MoveObject(I153_tire, I136_jack, 0, false);
+    MoveObject(I154_tire, I137_jack, 0, false);
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_822, 822, 'action');
     rfalse;
@@ -13006,7 +13028,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of giving the water bottle to Hurt Runner:
 [ R_823 ;
-    if ((((action ==##Give) &&  (actor==player) && ((noun == I133_water_bottle) && (true)) && ((second == I138_hurt_runner) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Give) &&  (actor==player) && ((noun == I133_water_bottle) && (true)) && ((second == I139_hurt_runner) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_823, 823);
     ! [1: say ~You hand the water bottle to the hurt runner and he immidiatly drinks it.^^'Thanks for the water man, my cramping is finally going away. Here is a mysterious coin, you deserve it!'~]
@@ -13014,7 +13036,7 @@ Array ActionHappened --> 0 0 0 0 0;
     ! [2: remove the water bottle from play]
     RemoveFromPlay(I133_water_bottle);
     ! [3: move mysterious coin to player]
-    MoveObject(I149_mysterious_coin, player, 0, false);
+    MoveObject(I150_mysterious_coin, player, 0, false);
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_823, 823, 'action');
     rfalse;
@@ -13022,17 +13044,17 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of giving the mysterious coin to the cigarette machine:
 [ R_828 ;
-    if ((((action ==##Give) &&  (actor==player) && ((noun == I149_mysterious_coin) && (true)) && ((second == I147_cigarette_machine) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Give) &&  (actor==player) && ((noun == I150_mysterious_coin) && (true)) && ((second == I148_cigarette_machine) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_828, 828);
     ! [1: now the cigarette machine carries the mysterious coin]
-    MoveObject(I149_mysterious_coin,I147_cigarette_machine);
+    MoveObject(I150_mysterious_coin,I148_cigarette_machine);
     ! [2: now the player carries the engine]
-    MoveObject(I150_engine,player);
+    MoveObject(I151_engine,player);
     ! [3: remove copper coin from play]
-    RemoveFromPlay(I144_copper_coin);
+    RemoveFromPlay(I145_copper_coin);
     ! [4: move engine to player]
-    MoveObject(I150_engine, player, 0, false);
+    MoveObject(I151_engine, player, 0, false);
     ! [5: say ~The machine rattles and drops an engine with a large thud. You reach in and grab it.~]
     say__p=1;ParaContent(); print "The machine rattles and drops an engine with a large thud. You reach in and grab it."; new_line; .L_Say9; .L_SayX9;
     RulebookFails(); rtrue;
@@ -13042,17 +13064,17 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of giving the silver coin to the cigarette machine:
 [ R_830 ;
-    if ((((action ==##Give) &&  (actor==player) && ((noun == I129_silver_coin) && (true)) && ((second == I147_cigarette_machine) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Give) &&  (actor==player) && ((noun == I129_silver_coin) && (true)) && ((second == I148_cigarette_machine) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_830, 830);
     ! [1: now the cigarette machine carries the silver coin]
-    MoveObject(I129_silver_coin,I147_cigarette_machine);
+    MoveObject(I129_silver_coin,I148_cigarette_machine);
     ! [2: now the player carries the bumper]
-    MoveObject(I151_bumper,player);
+    MoveObject(I152_bumper,player);
     ! [3: remove silver coin from play]
     RemoveFromPlay(I129_silver_coin);
     ! [4: move bumper to player]
-    MoveObject(I151_bumper, player, 0, false);
+    MoveObject(I152_bumper, player, 0, false);
     ! [5: say ~The machine rattles and drops a bumber with a large thud. You reach in and grab it.~]
     say__p=1;ParaContent(); print "The machine rattles and drops a bumber with a large thud. You reach in and grab it."; new_line; .L_Say10; .L_SayX10;
     RulebookFails(); rtrue;
@@ -13062,17 +13084,17 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of giving the copper coin to the cigarette machine:
 [ R_832 ;
-    if ((((action ==##Give) &&  (actor==player) && ((noun == I144_copper_coin) && (true)) && ((second == I147_cigarette_machine) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Give) &&  (actor==player) && ((noun == I145_copper_coin) && (true)) && ((second == I148_cigarette_machine) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_832, 832);
     ! [1: now the cigarette machine carries the copper coin]
-    MoveObject(I144_copper_coin,I147_cigarette_machine);
+    MoveObject(I145_copper_coin,I148_cigarette_machine);
     ! [2: now the player carries the tire]
-    MoveObject(I153_tire,player);
+    MoveObject(I154_tire,player);
     ! [3: remove copper coin from play]
-    RemoveFromPlay(I144_copper_coin);
+    RemoveFromPlay(I145_copper_coin);
     ! [4: move tire to player]
-    MoveObject(I153_tire, player, 0, false);
+    MoveObject(I154_tire, player, 0, false);
     ! [5: say ~The machine rattles and drops a tire with a large thud. You reach in and grab it.~]
     say__p=1;ParaContent(); print "The machine rattles and drops a tire with a large thud. You reach in and grab it."; new_line; .L_Say11; .L_SayX11;
     RulebookFails(); rtrue;
@@ -13082,17 +13104,17 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of giving the bronze coin to the cigarette machine:
 [ R_834 ;
-    if ((((action ==##Give) &&  (actor==player) && ((noun == I154_bronze_coin) && (true)) && ((second == I147_cigarette_machine) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Give) &&  (actor==player) && ((noun == I155_bronze_coin) && (true)) && ((second == I148_cigarette_machine) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_834, 834);
     ! [1: now the cigarette machine carries the bronze coin]
-    MoveObject(I154_bronze_coin,I147_cigarette_machine);
+    MoveObject(I155_bronze_coin,I148_cigarette_machine);
     ! [2: now the player carries the tail light]
-    MoveObject(I155_tail_light,player);
+    MoveObject(I156_tail_light,player);
     ! [3: remove bronze coin from play]
-    RemoveFromPlay(I154_bronze_coin);
+    RemoveFromPlay(I155_bronze_coin);
     ! [4: move tail light to player]
-    MoveObject(I155_tail_light, player, 0, false);
+    MoveObject(I156_tail_light, player, 0, false);
     ! [5: say ~The machine rattles and drops a tail light with a large thud. You reach in and grab it.~]
     say__p=1;ParaContent(); print "The machine rattles and drops a tail light with a large thud. You reach in and grab it."; new_line; .L_Say12; .L_SayX12;
     RulebookFails(); rtrue;
@@ -13116,7 +13138,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! instead of asking the Jack about ~car~:
 [ R_814 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I136_jack) && (true)) && (Consult_Grammar_100(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I137_jack) && (true)) && (Consult_Grammar_100(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_814, 814);
     ! [1: say ~Your car needs fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts,  I will fix your car up.~]
@@ -13128,7 +13150,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! instead of asking the Jack about ~broken car~:
 [ R_815 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I136_jack) && (true)) && (Consult_Grammar_101(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I137_jack) && (true)) && (Consult_Grammar_101(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_815, 815);
     ! [1: say ~Your car need fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts,  I will fix your car up.~]
@@ -13140,7 +13162,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! instead of asking the Jack about ~cigarette vending machine~:
 [ R_816 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I136_jack) && (true)) && (Consult_Grammar_102(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I137_jack) && (true)) && (Consult_Grammar_102(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_816, 816);
     ! [1: say ~That machine has been there for a long time, it sells car parts to anyone who has coins. Too bad I don't have any coins.~]
@@ -13152,7 +13174,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! instead of asking the Jack about ~repairing car~:
 [ R_817 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I136_jack) && (true)) && (Consult_Grammar_103(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I137_jack) && (true)) && (Consult_Grammar_103(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_817, 817);
     ! [1: say ~Your car need fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts,  I will fix your car up.~]
@@ -13164,7 +13186,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! instead of asking the Jack about ~car repair~:
 [ R_818 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I136_jack) && (true)) && (Consult_Grammar_104(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I137_jack) && (true)) && (Consult_Grammar_104(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_818, 818);
     ! [1: say ~Your car need fixing? Well you have come to right place stranger. I can easily fix it for you except that I am on a shortage of parts right now. However, if you bring me the parts,  I will fix your car up.~]
@@ -13176,7 +13198,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! instead of asking the Hurt Runner about ~leg~:
 [ R_824 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I138_hurt_runner) && (true)) && (Consult_Grammar_105(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I139_hurt_runner) && (true)) && (Consult_Grammar_105(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_824, 824);
     ! [1: say ~I can't move becuase my leg is cramping hard, do you have any water?~]
@@ -13188,7 +13210,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! instead of asking the Hurt Runner about ~leg cramp~:
 [ R_825 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I138_hurt_runner) && (true)) && (Consult_Grammar_106(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I139_hurt_runner) && (true)) && (Consult_Grammar_106(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_825, 825);
     ! [1: say ~I can't move becuase my leg is cramping hard, do you have any water?~]
@@ -13200,7 +13222,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! instead of asking the Hurt Runner about ~cramp~:
 [ R_826 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I138_hurt_runner) && (true)) && (Consult_Grammar_107(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I139_hurt_runner) && (true)) && (Consult_Grammar_107(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_826, 826);
     ! [1: say ~I can't move becuase my leg is cramping hard, do you have any water?~]
@@ -13212,7 +13234,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! instead of asking the Hurt Runner about ~cramping leg~:
 [ R_827 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I138_hurt_runner) && (true)) && (Consult_Grammar_108(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I139_hurt_runner) && (true)) && (Consult_Grammar_108(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_827, 827);
     ! [1: say ~I can't move becuase my leg is cramping hard, do you have any water?~]
@@ -13238,11 +13260,11 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of buying the engine:
 [ R_829 ;
-    if ((((action ==##Buy) &&  (actor==player) && ((noun == I150_engine) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Buy) &&  (actor==player) && ((noun == I151_engine) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_829, 829);
     ! [1: if the player has the mysterious coin , try giving the mysterious coin to the cigarette machine]
-    if (((player == OwnerOf(I149_mysterious_coin)))) { TryAction(0, player, ##Give, I149_mysterious_coin, I147_cigarette_machine);; }
+    if (((player == OwnerOf(I150_mysterious_coin)))) { TryAction(0, player, ##Give, I150_mysterious_coin, I148_cigarette_machine);; }
     ! [2: otherwise say ~You don't have enough money.~]
     else { say__p=1;ParaContent(); print "You don't have enough money."; new_line; .L_Say24; .L_SayX24; }
     RulebookFails(); rtrue;
@@ -13252,11 +13274,11 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of buying the bumper:
 [ R_831 ;
-    if ((((action ==##Buy) &&  (actor==player) && ((noun == I151_bumper) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Buy) &&  (actor==player) && ((noun == I152_bumper) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_831, 831);
     ! [1: if the player has the silver coin , try giving the silver coin to the cigarette machine]
-    if (((player == OwnerOf(I129_silver_coin)))) { TryAction(0, player, ##Give, I129_silver_coin, I147_cigarette_machine);; }
+    if (((player == OwnerOf(I129_silver_coin)))) { TryAction(0, player, ##Give, I129_silver_coin, I148_cigarette_machine);; }
     ! [2: otherwise say ~You don't have enough money.~]
     else { say__p=1;ParaContent(); print "You don't have enough money."; new_line; .L_Say25; .L_SayX25; }
     RulebookFails(); rtrue;
@@ -13266,11 +13288,11 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of buying the tire:
 [ R_833 ;
-    if ((((action ==##Buy) &&  (actor==player) && ((noun == I153_tire) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Buy) &&  (actor==player) && ((noun == I154_tire) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_833, 833);
     ! [1: if the player has the copper coin , try giving the copper coin to the cigarette machine]
-    if (((player == OwnerOf(I144_copper_coin)))) { TryAction(0, player, ##Give, I144_copper_coin, I147_cigarette_machine);; }
+    if (((player == OwnerOf(I145_copper_coin)))) { TryAction(0, player, ##Give, I145_copper_coin, I148_cigarette_machine);; }
     ! [2: otherwise say ~You don't have enough money.~]
     else { say__p=1;ParaContent(); print "You don't have enough money."; new_line; .L_Say26; .L_SayX26; }
     RulebookFails(); rtrue;
@@ -13280,11 +13302,11 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of buying the tail light:
 [ R_835 ;
-    if ((((action ==##Buy) &&  (actor==player) && ((noun == I155_tail_light) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##Buy) &&  (actor==player) && ((noun == I156_tail_light) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_835, 835);
     ! [1: if the player has the bronze coin , try giving the bronze coin to the cigarette machine]
-    if (((player == OwnerOf(I154_bronze_coin)))) { TryAction(0, player, ##Give, I154_bronze_coin, I147_cigarette_machine);; }
+    if (((player == OwnerOf(I155_bronze_coin)))) { TryAction(0, player, ##Give, I155_bronze_coin, I148_cigarette_machine);; }
     ! [2: otherwise say ~You don't have enough money.~]
     else { say__p=1;ParaContent(); print "You don't have enough money."; new_line; .L_Say27; .L_SayX27; }
     RulebookFails(); rtrue;
@@ -13300,7 +13322,7 @@ Array ActionHappened --> 0 0 0 0 0;
     ! [1: say ~You smack him right in the face and he starts to cry. He calls 911 and you go to jail. Violence is not the answer.~]
     say__p=1;ParaContent(); print "You smack him right in the face and he starts to cry. He calls 911 and you go to jail. Violence is not the answer."; new_line; .L_Say28; .L_SayX28;
     ! [2: end the story finally saying ~You loose.~]
-    deadflag=TX_L_103; story_complete=true;
+    deadflag=TX_L_106; story_complete=true;
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_836, 836, 'action');
     rfalse;
@@ -29699,7 +29721,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ! Relations.i6t: Relation Route-Finding
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant MAX_ROUTE_LENGTH = 45 + 32;
+Constant MAX_ROUTE_LENGTH = 46 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -49177,18 +49199,18 @@ Verb 'hint'
 
 
 Constant TX_PS_49 = " An air conditioned store with bright lights. There is a cashier at the front. Bathrooms are South.";
-Constant TX_PS_94 = ">";
+Constant TX_PS_97 = ">";
 Constant TX_PS_3 = "A Car Fixing Tale";
-Constant TX_PS_91 = "A European coin from 1887.";
+Constant TX_PS_94 = "A European coin from 1887.";
 Constant TX_PS_51 = "A fake smile and a red apron verifies that he is the cashier. His arpon says ~I AM HERE TO HELP YOU!~";
-Constant TX_PS_96 = "A fun car fixing adventure. Can you, as the player fix your wrecked car and get home safely? Cover Art by dreamstime.com";
+Constant TX_PS_99 = "A fun car fixing adventure. Can you, as the player fix your wrecked car and get home safely? Cover Art by dreamstime.com";
 Constant TX_PS_41 = "A ordinary public bathroom. There is graffiti on the walls, an overflowing rubbish can, and no toilet paper.^^Car wreckage is South. The Convenience Store is North.";
 Constant TX_PS_55 = "A poor lit garage gives you the impression that buisness is slow. The walls are baren and there there is nothing much here. You wonder if this is even the right place. There is a man named Jack sitting down behind a desk.^^^The cigarette vending machine is West.";
-Constant TX_PS_83 = "A rusty copper coin. You can't see anything unusual about it.";
-Constant TX_PS_57 = "A tired looking man with a wizard like beard. He is wearing a t-shirt and jeans.";
-Constant TX_PS_95 = "Adventure";
-Constant TX_PS_59 = "An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East.";
-Constant TX_PS_61 = "An old vending machine filled with many car parts. There is a sign on the machine.^^Engine - mysterious coin^^Bumper - silver coin^^Tail light - bronze coin^^Tire - copper coin";
+Constant TX_PS_86 = "A rusty copper coin. You can't see anything unusual about it.";
+Constant TX_PS_60 = "A tired looking man with a wizard like beard. He is wearing a t-shirt and jeans.";
+Constant TX_PS_98 = "Adventure";
+Constant TX_PS_62 = "An empty area except for an odd looking vending machine. The car wreckage is West. The car repair shop is East.";
+Constant TX_PS_64 = "An old vending machine filled with many car parts. There is a sign on the machine.^^Engine - mysterious coin^^Bumper - silver coin^^Tail light - bronze coin^^Tire - copper coin";
 Constant TX_PS_53 = "An ordinary bottle of water.";
 Constant TX_PS_43 = "An overflowing trash can, nothing special.";
 Constant TX_PS_40 = "Bathrooms";
@@ -49196,64 +49218,67 @@ Constant TX_PS_34 = "Bronze coin";
 Constant TX_PS_54 = "Car Repair Shop";
 Constant TX_PS_35 = "Car Wreckage";
 Constant TX_PS_50 = "Cashier";
-Constant TX_PS_58 = "Cigarette Vending Machine";
+Constant TX_PS_61 = "Cigarette Vending Machine";
 Constant TX_PS_48 = "Convenience Store";
-Constant TX_PS_82 = "Copper coin";
-Constant TX_PS_66 = "Dead End";
-Constant TX_PS_70 = "Forest";
+Constant TX_PS_85 = "Copper coin";
+Constant TX_PS_69 = "Dead End";
+Constant TX_PS_58 = "Desk";
+Constant TX_PS_73 = "Forest";
 Constant TX_PS_46 = "Graffiti";
-Constant TX_PS_87 = "Gum wrapper";
-Constant TX_PS_69 = "He looks tired and sweaty, his leg is cramping up.";
-Constant TX_PS_68 = "Hurt Runner";
+Constant TX_PS_90 = "Gum wrapper";
+Constant TX_PS_72 = "He looks tired and sweaty, his leg is cramping up.";
+Constant TX_PS_71 = "Hurt Runner";
 Constant TX_PS_47 = "I droPPeD soMEThinG iN THE toiLeT :)";
-Constant TX_PS_89 = "If the player";
-Constant TX_PS_56 = "Jack";
+Constant TX_PS_92 = "If the player";
+Constant TX_PS_59 = "Jack";
 Constant TX_PS_4 = "Jaryd Ma";
-Constant TX_PS_77 = "Old street light";
-Constant TX_PS_100 = "QUIT";
-Constant TX_PS_97 = "RESTART";
-Constant TX_PS_98 = "RESTORE a saved game";
+Constant TX_PS_80 = "Old street light";
+Constant TX_PS_103 = "QUIT";
+Constant TX_PS_100 = "RESTART";
+Constant TX_PS_101 = "RESTORE a saved game";
 Constant TX_PS_2 = "RepairMyCar";
-Constant TX_PS_75 = "Roadside";
+Constant TX_PS_78 = "Roadside";
 Constant TX_PS_42 = "Rubbish can";
-Constant TX_PS_90 = "Silver coin";
-Constant TX_PS_86 = "Smashed soda can";
+Constant TX_PS_93 = "Silver coin";
+Constant TX_PS_89 = "Smashed soda can";
 Constant TX_PS_45 = "Something is clogging the toilet, you look closer and see something shiney. You reluctantly reach in and grab it.^^It's a silver coin!";
-Constant TX_PS_74 = "Tall trees";
-Constant TX_PS_76 = "The roadside is deserted except for some trash on the side of the curb. There is a old street light next to you.^^The car wreckage is East.";
-Constant TX_PS_67 = "There is a hurt runner stretching on the curb. It looks like his leg is cramping. He may need your help.^^The car wreckage is North. The forest is South.";
+Constant TX_PS_77 = "Tall trees";
+Constant TX_PS_79 = "The roadside is deserted except for some trash on the side of the curb. There is a old street light next to you.^^The car wreckage is East.";
+Constant TX_PS_70 = "There is a hurt runner stretching on the curb. It looks like his leg is cramping. He may need your help.^^The car wreckage is North. The forest is South.";
 Constant TX_PS_44 = "Toilet";
-Constant TX_PS_81 = "Trash";
-Constant TX_PS_101 = "UNDO the last command";
+Constant TX_PS_84 = "Trash";
+Constant TX_PS_104 = "UNDO the last command";
 Constant TX_PS_52 = "Water bottle";
-Constant TX_PS_71 = "What lies beyond here is a mystery. All you see is tall trees. The dead end is North.";
+Constant TX_PS_74 = "What lies beyond here is a mystery. All you see is tall trees. The dead end is North.";
 Constant TX_PS_32 = "You are stressed out, with blood shot eyes, and messy hair. You just want to go home.";
-Constant TX_PS_102 = "You hand the last part to Jack and he quickly fixes your car. Your car almost looks like new again! You thank him and get into your car. Feeling so relieved, you drive home at last. YOU WIN!";
-Array TX_L_102 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_102;
-Constant TX_PS_103 = "You loose.";
-Array TX_L_103 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_103;
-Constant TX_PS_80 = "You see a smashed soda can, a gum wrapper and a copper coin.";
+Constant TX_PS_105 = "You hand the last part to Jack and he quickly fixes your car. Your car almost looks like new again! You thank him and get into your car. Feeling so relieved, you drive home at last. YOU WIN!";
+Array TX_L_105 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_105;
+Constant TX_PS_106 = "You loose.";
+Array TX_L_106 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_106;
+Constant TX_PS_83 = "You see a smashed soda can, a gum wrapper and a copper coin.";
 Constant TX_PS_38 = "Your 18th birthday present is now needing a new a tire, tail light, engine and bumper.";
 Constant TX_PS_39 = "Your Car";
 Constant TX_PS_36 = "Your car is a total wreck, you need to fix it ASAP.^^Bathrooms are north. The roadside is West. The cigarette vending machine is East. The dead end is South.";
 Constant TX_PS_33 = "Yourself";
-Constant TX_PS_85 = "a smashed diet soda can.";
-Constant TX_PS_88 = "an old gum wrapper that smells like mint.";
+Constant TX_PS_88 = "a smashed diet soda can.";
+Constant TX_PS_91 = "an old gum wrapper that smells like mint.";
+Constant TX_PS_57 = "an old maple desk. Very sturdy and long lasting.";
 Constant TX_PS_9 = "animals";
 Constant TX_PS_14 = "backdrops";
-Constant TX_PS_63 = "bumper";
-Constant TX_PS_60 = "cigarette machine";
+Constant TX_PS_66 = "bumper";
+Constant TX_PS_63 = "cigarette machine";
 Constant TX_PS_11 = "containers";
-Constant TX_PS_93 = "copper dollar";
+Constant TX_PS_96 = "copper dollar";
+Constant TX_PS_56 = "desk";
 Constant TX_PS_15 = "devices";
 Constant TX_PS_17 = "directions";
 Constant TX_PS_10 = "doors";
 Constant TX_PS_28 = "down";
 Constant TX_PS_25 = "east";
-Constant TX_PS_62 = "engine";
+Constant TX_PS_65 = "engine";
 Constant TX_PS_29 = "inside";
 Constant TX_PS_7 = "men";
-Constant TX_PS_92 = "mysterious coin";
+Constant TX_PS_95 = "mysterious coin";
 Constant TX_PS_18 = "north";
 Constant TX_PS_20 = "northeast";
 Constant TX_PS_21 = "northwest";
@@ -49261,19 +49286,19 @@ Constant TX_PS_30 = "outside";
 Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
 Constant TX_PS_16 = "regions";
-Constant TX_PS_78 = "rusty and silver. There is nothing special about it.";
-Constant TX_PS_99 = "see some suggestions for AMUSING things to do";
-Constant TX_PS_84 = "smashed soda can";
+Constant TX_PS_81 = "rusty and silver. There is nothing special about it.";
+Constant TX_PS_102 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_87 = "smashed soda can";
 Constant TX_PS_22 = "south";
 Constant TX_PS_23 = "southeast";
 Constant TX_PS_24 = "southwest";
-Constant TX_PS_73 = "sturdy oak trees, looks like they have been here for many years.";
+Constant TX_PS_76 = "sturdy oak trees, looks like they have been here for many years.";
 Constant TX_PS_5 = "supporters";
-Constant TX_PS_65 = "tail light";
-Constant TX_PS_72 = "tall trees";
+Constant TX_PS_68 = "tail light";
+Constant TX_PS_75 = "tall trees";
 Constant TX_PS_19 = "the";
-Constant TX_PS_64 = "tire";
-Constant TX_PS_79 = "trash";
+Constant TX_PS_67 = "tire";
+Constant TX_PS_82 = "trash";
 Constant TX_PS_27 = "up";
 Constant TX_PS_12 = "vehicles";
 Constant TX_PS_26 = "west";
@@ -56644,147 +56669,154 @@ Array BC_219 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_220 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_221 --> PACKED_TEXT_STORAGE TX_PS_56;
 Array BC_222 --> PACKED_TEXT_STORAGE TX_PS_57;
-Array BC_223 --> PACKED_TEXT_STORAGE TX_PS_56;
+Array BC_223 --> PACKED_TEXT_STORAGE TX_PS_58;
 Array BC_224 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_225 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_226 --> PACKED_TEXT_STORAGE TX_PS_6;
+Array BC_226 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_227 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_228 --> PACKED_TEXT_STORAGE TX_PS_58;
-Array BC_229 --> PACKED_TEXT_STORAGE TX_PS_59;
-Array BC_230 --> PACKED_TEXT_STORAGE TX_PS_58;
+Array BC_228 --> PACKED_TEXT_STORAGE TX_PS_59;
+Array BC_229 --> PACKED_TEXT_STORAGE TX_PS_60;
+Array BC_230 --> PACKED_TEXT_STORAGE TX_PS_59;
 Array BC_231 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_232 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_233 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_234 --> PACKED_TEXT_STORAGE TX_PS_60;
-Array BC_235 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_236 --> PACKED_TEXT_STORAGE TX_PS_61;
-Array BC_237 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_233 --> PACKED_TEXT_STORAGE TX_PS_6;
+Array BC_234 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_235 --> PACKED_TEXT_STORAGE TX_PS_61;
+Array BC_236 --> PACKED_TEXT_STORAGE TX_PS_62;
+Array BC_237 --> PACKED_TEXT_STORAGE TX_PS_61;
 Array BC_238 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_239 --> PACKED_TEXT_STORAGE TX_PS_6;
-Array BC_240 --> PACKED_TEXT_STORAGE TX_PS_62;
-Array BC_241 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_242 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_243 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_239 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_240 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_241 --> PACKED_TEXT_STORAGE TX_PS_63;
+Array BC_242 --> PACKED_TEXT_STORAGE TX_PS_19;
+Array BC_243 --> PACKED_TEXT_STORAGE TX_PS_64;
 Array BC_244 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_245 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_246 --> PACKED_TEXT_STORAGE TX_PS_63;
-Array BC_247 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_246 --> PACKED_TEXT_STORAGE TX_PS_6;
+Array BC_247 --> PACKED_TEXT_STORAGE TX_PS_65;
 Array BC_248 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_249 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_250 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_251 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_252 --> PACKED_TEXT_STORAGE TX_PS_64;
-Array BC_253 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_252 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_253 --> PACKED_TEXT_STORAGE TX_PS_66;
 Array BC_254 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_255 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_256 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_257 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_258 --> PACKED_TEXT_STORAGE TX_PS_65;
-Array BC_259 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_258 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_259 --> PACKED_TEXT_STORAGE TX_PS_67;
 Array BC_260 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_261 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_262 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_263 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_264 --> PACKED_TEXT_STORAGE TX_PS_66;
-Array BC_265 --> PACKED_TEXT_STORAGE TX_PS_67;
+Array BC_264 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_265 --> PACKED_TEXT_STORAGE TX_PS_68;
 Array BC_266 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_267 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_268 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_269 --> PACKED_TEXT_STORAGE TX_PS_68;
-Array BC_270 --> PACKED_TEXT_STORAGE TX_PS_69;
-Array BC_271 --> PACKED_TEXT_STORAGE TX_PS_68;
-Array BC_272 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_269 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_270 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_271 --> PACKED_TEXT_STORAGE TX_PS_69;
+Array BC_272 --> PACKED_TEXT_STORAGE TX_PS_70;
 Array BC_273 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_274 --> PACKED_TEXT_STORAGE TX_PS_6;
+Array BC_274 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_275 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_276 --> PACKED_TEXT_STORAGE TX_PS_70;
-Array BC_277 --> PACKED_TEXT_STORAGE TX_PS_71;
-Array BC_278 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_276 --> PACKED_TEXT_STORAGE TX_PS_71;
+Array BC_277 --> PACKED_TEXT_STORAGE TX_PS_72;
+Array BC_278 --> PACKED_TEXT_STORAGE TX_PS_71;
 Array BC_279 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_280 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_281 --> PACKED_TEXT_STORAGE TX_PS_72;
-Array BC_282 --> PACKED_TEXT_STORAGE TX_PS_73;
-Array BC_283 --> PACKED_TEXT_STORAGE TX_PS_74;
-Array BC_284 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_281 --> PACKED_TEXT_STORAGE TX_PS_6;
+Array BC_282 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_283 --> PACKED_TEXT_STORAGE TX_PS_73;
+Array BC_284 --> PACKED_TEXT_STORAGE TX_PS_74;
 Array BC_285 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_286 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_287 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_288 --> PACKED_TEXT_STORAGE TX_PS_75;
 Array BC_289 --> PACKED_TEXT_STORAGE TX_PS_76;
-Array BC_290 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_290 --> PACKED_TEXT_STORAGE TX_PS_77;
 Array BC_291 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_292 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_293 --> PACKED_TEXT_STORAGE TX_PS_77;
-Array BC_294 --> PACKED_TEXT_STORAGE TX_PS_78;
-Array BC_295 --> PACKED_TEXT_STORAGE TX_PS_77;
-Array BC_296 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_293 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_294 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_295 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_296 --> PACKED_TEXT_STORAGE TX_PS_79;
 Array BC_297 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_298 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_299 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_300 --> PACKED_TEXT_STORAGE TX_PS_79;
-Array BC_301 --> PACKED_TEXT_STORAGE TX_PS_80;
-Array BC_302 --> PACKED_TEXT_STORAGE TX_PS_81;
+Array BC_300 --> PACKED_TEXT_STORAGE TX_PS_80;
+Array BC_301 --> PACKED_TEXT_STORAGE TX_PS_81;
+Array BC_302 --> PACKED_TEXT_STORAGE TX_PS_80;
 Array BC_303 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_304 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_305 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_306 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_307 --> PACKED_TEXT_STORAGE TX_PS_82;
 Array BC_308 --> PACKED_TEXT_STORAGE TX_PS_83;
-Array BC_309 --> PACKED_TEXT_STORAGE TX_PS_82;
+Array BC_309 --> PACKED_TEXT_STORAGE TX_PS_84;
 Array BC_310 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_311 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_312 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_313 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_314 --> PACKED_TEXT_STORAGE TX_PS_84;
-Array BC_315 --> PACKED_TEXT_STORAGE TX_PS_85;
-Array BC_316 --> PACKED_TEXT_STORAGE TX_PS_86;
+Array BC_314 --> PACKED_TEXT_STORAGE TX_PS_85;
+Array BC_315 --> PACKED_TEXT_STORAGE TX_PS_86;
+Array BC_316 --> PACKED_TEXT_STORAGE TX_PS_85;
 Array BC_317 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_318 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_319 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_320 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_321 --> PACKED_TEXT_STORAGE TX_PS_87;
 Array BC_322 --> PACKED_TEXT_STORAGE TX_PS_88;
-Array BC_323 --> PACKED_TEXT_STORAGE TX_PS_87;
+Array BC_323 --> PACKED_TEXT_STORAGE TX_PS_89;
 Array BC_324 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_325 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_326 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_327 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_328 --> PACKED_TEXT_STORAGE TX_PS_89;
-Array BC_329 --> PACKED_TEXT_STORAGE TX_PS_89;
-Array BC_330 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_328 --> PACKED_TEXT_STORAGE TX_PS_90;
+Array BC_329 --> PACKED_TEXT_STORAGE TX_PS_91;
+Array BC_330 --> PACKED_TEXT_STORAGE TX_PS_90;
 Array BC_331 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_332 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_333 --> PACKED_TEXT_STORAGE TX_PS_6;
+Array BC_333 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_334 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_335 --> PACKED_TEXT_STORAGE TX_PS_90;
-Array BC_336 --> PACKED_TEXT_STORAGE TX_PS_91;
-Array BC_337 --> PACKED_TEXT_STORAGE TX_PS_90;
+Array BC_335 --> PACKED_TEXT_STORAGE TX_PS_92;
+Array BC_336 --> PACKED_TEXT_STORAGE TX_PS_92;
+Array BC_337 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_338 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_339 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_340 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_340 --> PACKED_TEXT_STORAGE TX_PS_6;
 Array BC_341 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_342 --> PACKED_TEXT_STORAGE TX_PS_92;
-Array BC_343 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_344 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_342 --> PACKED_TEXT_STORAGE TX_PS_93;
+Array BC_343 --> PACKED_TEXT_STORAGE TX_PS_94;
+Array BC_344 --> PACKED_TEXT_STORAGE TX_PS_93;
 Array BC_345 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_346 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_347 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_348 --> PACKED_TEXT_STORAGE TX_PS_93;
-Array BC_349 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_348 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_349 --> PACKED_TEXT_STORAGE TX_PS_95;
 Array BC_350 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_351 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_352 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_353 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_354 --> PACKED_TEXT_STORAGE TX_PS_94;
-Array BC_355 --> PACKED_TEXT_STORAGE TX_PS_4;
-Array BC_356 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_357 --> PACKED_TEXT_STORAGE TX_PS_95;
-Array BC_358 --> PACKED_TEXT_STORAGE TX_PS_96;
-Array BC_359 --> PACKED_TEXT_STORAGE TX_PS_97;
-Array BC_360 --> PACKED_TEXT_STORAGE TX_PS_98;
-Array BC_361 --> PACKED_TEXT_STORAGE TX_PS_99;
-Array BC_362 --> PACKED_TEXT_STORAGE TX_PS_100;
-Array BC_363 --> PACKED_TEXT_STORAGE TX_PS_101;
+Array BC_354 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_355 --> PACKED_TEXT_STORAGE TX_PS_96;
+Array BC_356 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_357 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_358 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_359 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_360 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_361 --> PACKED_TEXT_STORAGE TX_PS_97;
+Array BC_362 --> PACKED_TEXT_STORAGE TX_PS_4;
+Array BC_363 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_364 --> PACKED_TEXT_STORAGE TX_PS_98;
+Array BC_365 --> PACKED_TEXT_STORAGE TX_PS_99;
+Array BC_366 --> PACKED_TEXT_STORAGE TX_PS_100;
+Array BC_367 --> PACKED_TEXT_STORAGE TX_PS_101;
+Array BC_368 --> PACKED_TEXT_STORAGE TX_PS_102;
+Array BC_369 --> PACKED_TEXT_STORAGE TX_PS_103;
+Array BC_370 --> PACKED_TEXT_STORAGE TX_PS_104;
 
 
 

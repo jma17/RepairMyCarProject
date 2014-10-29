@@ -19,7 +19,7 @@ Casting hint is an action applying to nothing.
 
 Understand "hint" as casting hint.
 
-when play begins, say "Driving home one night, you fall asleep when you are on the highway. You wake up with a bloody nose and you wonder what just happened. You climb out of your car and see that it is totally wrecked. Luckily you crashed and no one was hurt. You realize that you have to find a repair shop fast because you don't want your parents to know where you are. You reach into the glove compartment for money and all you find is a bronze coin."
+when play begins, say "Driving home one night, you fall asleep on the highway. You wake up with a bloody nose and you wonder what just happened. You climb out of your car and see that it is totally wrecked. Luckily, no one was hurt in the crash. You realize that you have to find a repair shop fast because you don't want your parents to know where you are. You reach into the glove compartment for money and all you find is a bronze coin."
 
 
 Instead of casting hint:
@@ -77,6 +77,8 @@ Car Repair Shop is a room. "A poor lit garage gives you the impression that buis
 The cigarette vending machine is West."
 
 Car Repair Shop is east of Cigarette Vending Machine.
+
+desk is a thing in the Car repair shop. It is undescribed. It is scenery. The description is "an old maple desk. Very sturdy and long lasting."
 
 [got this code from a day for spelling]
 
