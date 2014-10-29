@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
+    <story>
+        <identification>
+            <ifid>94073187-9095-4E3D-98CB-CA21A3FCAA40</ifid>
+            <format>glulx</format>
+        </identification>
+        <bibliographic>
+            <title>RepairMyCar</title>
+            <author>Jaryd Ma</author>
+            <headline>A Car Fixing Tale</headline>
+            <genre>Adventure</genre>
+            <firstpublished>2014</firstpublished>
+            <description>A fun car fixing adventure. Can you, as the player fix your wrecked car and get home safely? Cover Art by dreamstime.com</description>
+            <language>en</language>
+            <group>Inform</group>
+        </bibliographic>
+        <cover>
+            <format>jpg</format>
+            <height>236</height>
+            <width>400</width>
+            <description>Wrecked Car.</description>
+        </cover>
+        <releases>
+            <attached>
+                <release>
+                    <releasedate>2014-10-28</releasedate>
+                    <version>1</version>
+                    <compiler>Inform 7</compiler>
+                    <compilerversion>6L38</compilerversion>
+                </release>
+            </attached>
+        </releases>
+        <colophon>
+            <generator>Inform 7</generator>
+            <generatorversion>6L38</generatorversion>
+            <originated>2014-10-28</originated>
+        </colophon>
+        <glulx>
+            <serial>141028</serial>
+            <release>1</release>
+            <compiler>Inform 7 build 6L38</compiler>
+            <coverpicture>1</coverpicture>
+        </glulx>
+    </story>
+</ifindex>

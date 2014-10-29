@@ -1,0 +1,38 @@
+! Blurb file created by Inform build 6L38
+
+status "/Users/jma17/Desktop/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/jma17/Desktop/comp sci/RepairMyCarProject/RepairMyCar.inform/Build/StatusCblorb.html"
+
+
+! Identification
+
+project folder "/Users/jma17/Desktop/comp sci/RepairMyCarProject/RepairMyCar.inform"
+release to "/Users/jma17/Desktop/comp sci/RepairMyCarProject/RepairMyCar.materials/Release"
+
+! Blorb instructions
+
+storyfile leafname "RepairMyCar.gblorb"
+storyfile "/Users/jma17/Desktop/comp sci/RepairMyCarProject/RepairMyCar.inform/Build/output.ulx" include
+ifiction "/Users/jma17/Desktop/comp sci/RepairMyCarProject/RepairMyCar.inform/Metadata.iFiction" include
+cover "/Users/jma17/Desktop/comp sci/RepairMyCarProject/RepairMyCar.materials/Cover.jpg"
+picture 1 "/Users/jma17/Desktop/comp sci/RepairMyCarProject/RepairMyCar.materials/Cover.jpg"
+
+! Placeholder variables
+
+placeholder [IFID] = "94073187-9095-4E3D-98CB-CA21A3FCAA40"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2014"
+placeholder [TITLE] = "RepairMyCar"
+placeholder [AUTHOR] = "Jaryd Ma"
+placeholder [BLURB] = "A fun car fixing adventure. Can you, as the player fix your wrecked car and get home safely? Cover Art by dreamstime.com"
+
+! Other material to release
+
+status instruction ||&nbsp;<a href="source:story.ni#line15"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
+status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc405.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc400.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc410.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory postcard'&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
